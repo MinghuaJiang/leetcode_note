@@ -97,6 +97,27 @@ public static void sort(int[] array){
 }
 ```
 
+### Selection Sort
+
+```java
+public static void sort(int[] array){
+    for (int i = 0; i < array.length - 1; i++){
+        int minIndex = i;
+        // 找到未排序区最小的
+        for (int j = i + 1; j < array.length; j++){
+            if (array[j] < array[minIndex]){
+                minIndex = j;
+            }
+        }
+
+        // 和已排序区域外第一个元素互换
+        int tmp = array[i];
+        array[i] = array[minIndex];
+        array[minIndex] = tmp;
+    }
+}
+```
+
 ### Quick Sort
 
 #### Two Partition Algorithm
