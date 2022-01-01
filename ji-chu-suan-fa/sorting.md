@@ -2,15 +2,15 @@
 
 ### Sorting Algorithm Comparison
 
-| Sorting Algorithm | Time Complexity                                 | Space Complexity | Comment  |
-| ----------------- | ----------------------------------------------- | ---------------- | -------- |
-| Bubble Sort       | <p>Best Case O(N)</p><p>Worst Case O(N^2)</p>   | O(1)             | Stable   |
-| Insertion Sort    | <p>Best Case O(N)</p><p>Worst Case O(N^2)</p>   | O(1)             | Stable   |
-| Selection Sort    | <p>Best Case O(N^2)</p><p>Worst Case O(N^2)</p> | O(1)             | Instable |
-|                   |                                                 |                  |          |
-|                   |                                                 |                  |          |
-|                   |                                                 |                  |          |
-|                   |                                                 |                  |          |
+| Sorting Algorithm | Time Complexity                                 | Space Complexity | Stableness           |
+| ----------------- | ----------------------------------------------- | ---------------- | -------------------- |
+| Bubble Sort       | <p>Best Case O(N)</p><p>Worst Case O(N^2)</p>   | O(1)             | Stable               |
+| Insertion Sort    | <p>Best Case O(N)</p><p>Worst Case O(N^2)</p>   | O(1)             | Stable               |
+| Selection Sort    | <p>Best Case O(N^2)</p><p>Worst Case O(N^2)</p> | O(1)             | Instable (4 2 3 4 1) |
+|                   |                                                 |                  |                      |
+|                   |                                                 |                  |                      |
+|                   |                                                 |                  |                      |
+|                   |                                                 |                  |                      |
 
 ### Bubble Sort
 
