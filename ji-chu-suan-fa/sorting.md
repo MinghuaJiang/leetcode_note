@@ -2,15 +2,17 @@
 
 ### Sorting Algorithm Comparison
 
-| Sorting Algorithm | Time Complexity                                 | Space Complexity | Stableness           |
-| ----------------- | ----------------------------------------------- | ---------------- | -------------------- |
-| Bubble Sort       | <p>Best Case O(N)</p><p>Worst Case O(N^2)</p>   | O(1)             | Stable               |
-| Insertion Sort    | <p>Best Case O(N)</p><p>Worst Case O(N^2)</p>   | O(1)             | Stable               |
-| Selection Sort    | <p>Best Case O(N^2)</p><p>Worst Case O(N^2)</p> | O(1)             | Instable (4 2 3 4 1) |
-|                   |                                                 |                  |                      |
-|                   |                                                 |                  |                      |
-|                   |                                                 |                  |                      |
-|                   |                                                 |                  |                      |
+| Sorting Algorithm | Time Complexity                                 | Space Complexity                  | Stableness           |
+| ----------------- | ----------------------------------------------- | --------------------------------- | -------------------- |
+| Bubble Sort       | <p>Best Case O(N)</p><p>Worst Case O(N^2)</p>   | O(1)                              | Stable               |
+| Insertion Sort    | <p>Best Case O(N)</p><p>Worst Case O(N^2)</p>   | O(1)                              | Stable               |
+| Selection Sort    | <p>Best Case O(N^2)</p><p>Worst Case O(N^2)</p> | O(1)                              | Instable (4 2 3 4 1) |
+| Quick Sort        | Best Case O(NLogN) Worst Case O(N^2)            | Best Case O(logN) Worst Case O(N) | Instable             |
+|                   |                                                 |                                   |                      |
+|                   |                                                 |                                   |                      |
+|                   |                                                 |                                   |                      |
+|                   |                                                 |                                   |                      |
+|                   |                                                 |                                   |                      |
 
 ### Bubble Sort
 
@@ -120,10 +122,30 @@ public static void sort(int[] array){
 
 ### Quick Sort
 
+* 核心思想是Divide and conquer, 用一个pivot把比piviot大和比pivot小的元素分割成左右两拨，其本质就是实现一个three way partition方法，然后继续以pivot为分界点递归细分，如果pivot取得好，logn层递归，所以最优复杂度是O(nlogn)。
+* Pivot可以是固定某一端的点，比如第一个或者最后一个点，一个优化是取random的点和某一个端的点互换再和原来的算法一样。
+* 值得注意的是，Quick Sort有两种不同的partition算法。
+
+```java
+public static void sort(int[] array){
+    quickSort(array, 0, array.length - 1);
+}
+
+private static void quickSort(int[] array, int startIndex, int endIndex){
+    if (startIndex < endIndex) {
+        int pivot = partition(array, startIndex, endIndex);
+        quickSort(array, startIndex, pivot - 1);
+        quickSort(array, pivot + 1, endIndex);
+    }
+}
+```
+
 #### Two Partition Algorithm
 
-* Hoare's Partition
-* Lomuto Partition
+* Lomuto Partition（单方向循环）
+* Hoare's Partition（双方向循环）
+
+
 
 #### Quick Select
 
