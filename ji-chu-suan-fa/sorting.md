@@ -126,6 +126,10 @@ public static void sort(int[] array){
 * Pivot可以是固定某一端的点，比如第一个或者最后一个点，一个优化是取random的点和某一个端的点互换再和原来的算法一样。
 * 值得注意的是，Quick Sort有两种不同的partition算法。
 
+#### Two Partition Algorithm
+
+_Lomuto Partition （单方向循环，最后需要单独做一次pivot和最后交换点的交换）_
+
 ```java
 public static void sort(int[] array){
     quickSort(array, 0, array.length - 1);
@@ -139,10 +143,6 @@ private static void quickSort(int[] array, int startIndex, int endIndex){
     }
 }
 ```
-
-#### Two Partition Algorithm
-
-_Lomuto Partition（单方向循环）_
 
 * 取startIndex为pivot
 
@@ -184,7 +184,35 @@ private static int partition(int[] array, int startIndex, int endIndex){
 }
 ```
 
-_Hoare's Partition（双方向循环）_
+* _另外Lomuto也可以做成左右双方向循环，没有单方向这么简单直白。_
+
+```java
+private static int partition(int[] array, int startIndex, int endIndex){
+    int pivot = array[startIndex];
+    int left = startIndex;
+    int right = endIndex;
+    while (left < right){
+        while (left < right && array[right] > pivot){
+            right--;
+        }
+
+        while (left < right && array[left] <= pivot){
+            left++;
+        }
+
+        if (left < right){
+            swap(array, left, right);
+        }
+
+        array[startIndex] = array[left];
+        array[left] = pivot;
+
+        return left;
+    }
+}
+```
+
+_Hoare's Partition （双方向循环）_
 
 
 
