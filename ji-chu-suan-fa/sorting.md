@@ -2,13 +2,15 @@
 
 ### Sorting Algorithm Comparison
 
-| Sorting Algorithm | Time Complexity                               | Stableness | Comment |
-| ----------------- | --------------------------------------------- | ---------- | ------- |
-| Bubble Sort       | <p>Best Case O(N)</p><p>Worst Case O(N^2)</p> | Stable     |         |
-|                   |                                               |            |         |
-|                   |                                               |            |         |
-|                   |                                               |            |         |
-|                   |                                               |            |         |
+| Sorting Algorithm | Time Complexity                                 | Space Complexity | Comment  |
+| ----------------- | ----------------------------------------------- | ---------------- | -------- |
+| Bubble Sort       | <p>Best Case O(N)</p><p>Worst Case O(N^2)</p>   | O(1)             | Stable   |
+| Insertion Sort    | <p>Best Case O(N)</p><p>Worst Case O(N^2)</p>   | O(1)             | Stable   |
+| Selection Sort    | <p>Best Case O(N^2)</p><p>Worst Case O(N^2)</p> | O(1)             | Instable |
+|                   |                                                 |                  |          |
+|                   |                                                 |                  |          |
+|                   |                                                 |                  |          |
+|                   |                                                 |                  |          |
 
 ### Bubble Sort
 
@@ -28,7 +30,7 @@ public static void sort(int[] array){
 }
 ```
 
-* Optimization 1 for best case scenario early termination
+* Optimization 1 for best case scenario early termination，已经有序了外循环就不继续下去了。
 
 ```java
 public static void sort(int[] array){
@@ -50,7 +52,7 @@ public static void sort(int[] array){
 }
 ```
 
-* Optimization 2 on top of optimization 1
+* Optimization 2 on top of optimization 1，考虑实际有序区大于外层循环轮数。比如3,4,2,1,5,6,7,8。第一轮循环有序区的大小已经是5而不是1了。
 
 ```java
 public static void sort3(int[] array){
@@ -77,7 +79,23 @@ public static void sort3(int[] array){
 }
 ```
 
-###
+### Insertion Sort
+
+```java
+public static void sort(int[] array){
+    for (int i = 1; i < array.length; i++){
+        int tmp = array[i];
+        int currentIndex = i;
+        // 从已排序区往右shift找到当前未排序元素的插入位置
+        while (currentIndex > 0 && tmp < array[currentIndex - 1]){
+            array[currentIndex] = array[currentIndex - 1];
+            currentIndex--;
+        }
+
+        array[currentIndex] = tmp;
+    }
+}
+```
 
 ### Quick Sort
 
