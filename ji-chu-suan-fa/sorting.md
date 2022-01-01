@@ -142,8 +142,49 @@ private static void quickSort(int[] array, int startIndex, int endIndex){
 
 #### Two Partition Algorithm
 
-* Lomuto Partition（单方向循环）
-* Hoare's Partition（双方向循环）
+_Lomuto Partition（单方向循环）_
+
+* 取startIndex为pivot
+
+```java
+private static int partition(int[] array, int startIndex, int endIndex){
+    int pivot = array[startIndex];
+    int currentIndex = startIndex;
+    // 扫描区间 (start + 1) -> end
+    for (int i = startIndex + 1; i <= endIndex; i++){
+        if (array[i] <= pivot){
+            currentIndex++;
+            swap(array, currentIndex, i);
+        }
+    }
+
+    // 这里需要的是和较小区域的右边界点交换
+    swap(array, startIndex, currentIndex);
+    return currentIndex;
+}
+```
+
+* 取endIndex为pivot
+
+```java
+private static int partition(int[] array, int startIndex, int endIndex){
+    int pivot = array[endIndex];
+    int currentIndex = startIndex - 1;
+    // 扫描区间 start -> (end - 1)
+    for (int i = startIndex; i <= endIndex - 1; i++){
+        if (array[i] <= pivot){
+            currentIndex++;
+            swap(array, currentIndex, i);
+        }
+    }
+
+    // 这里需要和较大区的左边界点交换
+    swap(array, endIndex, currentIndex + 1);
+    return currentIndex + 1;
+}
+```
+
+_Hoare's Partition（双方向循环）_
 
 
 
