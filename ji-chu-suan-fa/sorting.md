@@ -2,17 +2,18 @@
 
 ### Sorting Algorithm Comparison
 
-| Sorting Algorithm | Time Complexity                                 | Space Complexity                  | Stableness           |
-| ----------------- | ----------------------------------------------- | --------------------------------- | -------------------- |
-| Bubble Sort       | <p>Best Case O(N)</p><p>Worst Case O(N^2)</p>   | O(1)                              | Stable               |
-| Insertion Sort    | <p>Best Case O(N)</p><p>Worst Case O(N^2)</p>   | O(1)                              | Stable               |
-| Selection Sort    | <p>Best Case O(N^2)</p><p>Worst Case O(N^2)</p> | O(1)                              | Instable (4 2 3 4 1) |
-| Quick Sort        | Best Case O(NLogN) Worst Case O(N^2)            | Best Case O(logN) Worst Case O(N) | Instable             |
-|                   |                                                 |                                   |                      |
-|                   |                                                 |                                   |                      |
-|                   |                                                 |                                   |                      |
-|                   |                                                 |                                   |                      |
-|                   |                                                 |                                   |                      |
+| Sorting Algorithm | Time Complexity                                    | Space Complexity                  | Stableness           |
+| ----------------- | -------------------------------------------------- | --------------------------------- | -------------------- |
+| Bubble Sort       | <p>Best Case O(N)</p><p>Worst Case O(N^2)</p>      | O(1)                              | Stable               |
+| Insertion Sort    | <p>Best Case O(N)</p><p>Worst Case O(N^2)</p>      | O(1)                              | Stable               |
+| Selection Sort    | <p>Best Case O(N^2)</p><p>Worst Case O(N^2)</p>    | O(1)                              | Instable (4 2 3 4 1) |
+| Quick Sort        | <p>Best Case O(NLogN) </p><p>Worst Case O(N^2)</p> | Best Case O(logN) Worst Case O(N) | Instable             |
+| Merge Sort        | <p>Best Case O(NLogN) </p><p>Worst Case O(N^2)</p> |                                   | Stable               |
+| Heap Sort         | <p>Best Case O(N)</p><p>Worst Case O(NLogN)</p>    |                                   | Instable             |
+| Counting Sort     |                                                    |                                   |                      |
+| Bucket Sort       |                                                    |                                   |                      |
+| Radix Sort        |                                                    |                                   |                      |
+|                   |                                                    |                                   |                      |
 
 ### Bubble Sort
 
@@ -122,13 +123,15 @@ public static void sort(int[] array){
 
 ### Quick Sort
 
-* 核心思想是Divide and conquer, 用一个pivot把比piviot大和比pivot小的元素分割成左右两拨，其本质就是实现一个three way partition方法，然后继续以pivot为分界点递归细分，如果pivot取得好，logn层递归，所以最优复杂度是O(nlogn)。
+* 核心思想是Divide and conquer, 用一个pivot把比piviot大和比pivot小的元素分割成左右两拨，然后继续以pivot为分界点递归细分，如果pivot取得好，logn层递归，所以最优复杂度是O(nlogn)。
 * Pivot可以是固定某一端的点，比如第一个或者最后一个点，一个优化是取random的点和某一个端的点互换再和原来的算法一样。
 * 值得注意的是，Quick Sort有两种不同的partition算法。
 
 #### Two Partition Algorithm
 
-_Lomuto Partition （单方向循环，最后需要单独做一次pivot和最后交换点的交换）_
+_Lomuto Partition （Three-way partition)_
+
+* 这个partition思路是把数组分隔成<=pivot， pivot和>pivot的三波（等号在哪边都一样），partition method返回的是pivot的index。所以接下去左右递归分别是以pivot - 1和pivot + 1作为边界的。
 
 ```java
 public static void sort(int[] array){
@@ -212,11 +215,17 @@ private static int partition(int[] array, int startIndex, int endIndex){
 }
 ```
 
-_Hoare's Partition （双方向循环）_
+_Hoare's Partition （Two way partition）_
+
+* 这个partition思路是把四种分成了左右两拨，一波\<pivot, 一波>=pivot, partition method返回的是左侧分界点。所以接下去的左右递归，分界点是相邻的。
+* 取startIndex为pivot
+* 取endIndex为pivot
 
 
 
 #### Quick Select
+
+这个算法是基于quicksort partition的思想，解决类似计算top k类问题的一种O(N)的解法。每次通过去某一边的partition而不是两边都去来做到O(N)的复杂度，感兴趣的读者可以自行证明。
 
 ### Non-linear time sorting相关Leetcode题目
 
