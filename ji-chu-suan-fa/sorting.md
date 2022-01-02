@@ -218,10 +218,42 @@ private static int partition(int[] array, int startIndex, int endIndex){
 _Hoare's Partition （Two way partition）_
 
 * 这个partition思路是把四种分成了左右两拨，一波\<pivot, 一波>=pivot, partition method返回的是左侧分界点。所以接下去的左右递归，分界点是相邻的。
-* 取startIndex为pivot
-* 取endIndex为pivot
 
+```
+private static void quickSort(int[] array, int startIndex, int endIndex){
+    if (startIndex < endIndex) {
+        int pivot = partition(array, startIndex, endIndex);
+        //这里取决于partition返回左边界还是右边界以及pivot在左边还是右边。
+        //返回左边界那么就是pivot和pivot + 1, 返回右边界，
+        //就是pivot - 1和pivot
+        quickSort(array, startIndex, pivot);
+        quickSort(array, pivot + 1, endIndex);
+    }
+}
 
+public static int partition(int[] array, int startIndex, int endIndex)
+{
+    int pivot = array[startIndex];
+    int left = startIndex;
+    int right = endIndex;
+
+    while (left < right) {
+        while (array[left] < pivot) {
+            left++;
+        }
+
+        while (array[right] > pivot) {
+            right--;
+        }
+
+        swap(array, left, right);
+        left++;
+        right--;
+    }
+
+    return right;
+}
+```
 
 #### Quick Select
 
