@@ -6,7 +6,6 @@
 | ----------------- | -------------------------------------------------- | --------------------------------- | -------------------- |
 | Bubble Sort       | <p>Best Case O(N)</p><p>Worst Case O(N^2)</p>      | O(1)                              | Stable               |
 | Insertion Sort    | <p>Best Case O(N)</p><p>Worst Case O(N^2)</p>      | O(1)                              | Stable               |
-| Shell Sort        |                                                    |                                   |                      |
 | Selection Sort    | <p>Best Case O(N^2)</p><p>Worst Case O(N^2)</p>    | O(1)                              | Instable (4 2 3 4 1) |
 | Quick Sort        | <p>Best Case O(NLogN) </p><p>Worst Case O(N^2)</p> | Best Case O(logN) Worst Case O(N) | Instable             |
 | Merge Sort        | <p>Best Case O(NLogN) </p><p>Worst Case O(N^2)</p> | O(N)                              | Stable               |
@@ -266,7 +265,42 @@ public static int partition(int[] array, int startIndex, int endIndex)
 
 ### Merge Sort
 
+```java
+private static void mergeSort(int[] array, int start, int end){
+    if (start < end){
+        int mid = (start + end) / 2;
+        mergeSort(array, start, mid);
+        mergeSort(array, mid + 1, end);
+        merge(array, start, mid, end);
+    }
+}
 
+private static void merge(int[] array, int start, int mid, int end){
+    int[] tempArray = new int[end - start + 1];
+    int p1 = start;
+    int p2 = mid + 1;
+    int currentIndex = 0;
+    while (p1 <= mid && p2 <= end){
+        if (array[p1] < array[p2]){
+            tempArray[currentIndex++] = array[p1++];
+        }else{
+            tempArray[currentIndex++] = array[p2++];
+        }
+    }
+
+    while (p1 <= mid){
+        tempArray[currentIndex++] = array[p1++];
+    }
+
+    while (p2 <= end){
+        tempArray[currentIndex++] = array[p2++];
+    }
+
+    for (int i = 0; i < tempArray.length; i++){
+        array[i + start] = tempArray[i];
+    }
+}
+```
 
 ### Non-linear time sorting相关Leetcode题目
 
