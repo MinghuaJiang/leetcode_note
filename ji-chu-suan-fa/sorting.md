@@ -302,6 +302,8 @@ private static void merge(int[] array, int start, int mid, int end){
 }
 ```
 
+### Heap Sort
+
 ### Non-linear time sorting相关Leetcode题目
 
 * Merge Sort
