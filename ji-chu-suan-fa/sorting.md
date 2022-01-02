@@ -103,8 +103,6 @@ public static void sort(int[] array){
 
 ### Shell Sort
 
-
-
 ### Selection Sort
 
 ```java
@@ -119,9 +117,11 @@ public static void sort(int[] array){
         }
 
         // 和已排序区域外第一个元素互换
-        int tmp = array[i];
-        array[i] = array[minIndex];
-        array[minIndex] = tmp;
+        if (i != minIndex){
+            int tmp = array[i];
+            array[i] = array[minIndex];
+            array[minIndex] = tmp;
+        }
     }
 }
 ```
