@@ -100,8 +100,6 @@ public static void sort(int[] array){
 }
 ```
 
-### Shell Sort
-
 ### Selection Sort
 
 ```java
@@ -264,6 +262,8 @@ public static int partition(int[] array, int startIndex, int endIndex)
 这个算法是基于quicksort partition的思想，解决类似计算top k类问题的一种O(N)的解法。每次通过去某一边的partition而不是两边都去来做到O(N)的复杂度，感兴趣的读者可以自行证明。
 
 ### Merge Sort
+
+* 也是一种基于divide and conquer的排序算法，区别在于quick sort类似于pre-order traverse的递归。而merge sort类似于post-order traverse的递归
 
 ```java
 private static void mergeSort(int[] array, int start, int end){
