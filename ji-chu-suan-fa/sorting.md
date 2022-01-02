@@ -6,9 +6,10 @@
 | ----------------- | -------------------------------------------------- | --------------------------------- | -------------------- |
 | Bubble Sort       | <p>Best Case O(N)</p><p>Worst Case O(N^2)</p>      | O(1)                              | Stable               |
 | Insertion Sort    | <p>Best Case O(N)</p><p>Worst Case O(N^2)</p>      | O(1)                              | Stable               |
+| Shell Sort        |                                                    |                                   |                      |
 | Selection Sort    | <p>Best Case O(N^2)</p><p>Worst Case O(N^2)</p>    | O(1)                              | Instable (4 2 3 4 1) |
 | Quick Sort        | <p>Best Case O(NLogN) </p><p>Worst Case O(N^2)</p> | Best Case O(logN) Worst Case O(N) | Instable             |
-| Merge Sort        | <p>Best Case O(NLogN) </p><p>Worst Case O(N^2)</p> |                                   | Stable               |
+| Merge Sort        | <p>Best Case O(NLogN) </p><p>Worst Case O(N^2)</p> | O(N)                              | Stable               |
 | Heap Sort         | <p>Best Case O(N)</p><p>Worst Case O(NLogN)</p>    |                                   | Instable             |
 | Counting Sort     |                                                    |                                   |                      |
 | Bucket Sort       |                                                    |                                   |                      |
@@ -99,6 +100,10 @@ public static void sort(int[] array){
     }
 }
 ```
+
+### Shell Sort
+
+
 
 ### Selection Sort
 
@@ -258,6 +263,10 @@ public static int partition(int[] array, int startIndex, int endIndex)
 #### Quick Select
 
 这个算法是基于quicksort partition的思想，解决类似计算top k类问题的一种O(N)的解法。每次通过去某一边的partition而不是两边都去来做到O(N)的复杂度，感兴趣的读者可以自行证明。
+
+### Merge Sort
+
+
 
 ### Non-linear time sorting相关Leetcode题目
 
