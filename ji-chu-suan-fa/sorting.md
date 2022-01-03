@@ -308,6 +308,56 @@ private static void merge(int[] array, int start, int mid, int end){
 
 ### Heap Sort
 
+* 这个算法的思路是利用Heap的特性，通过循环"删除"heap的顶，并把被删除的元素留在当前heap有效大小的末尾，来达到排序效果。如果是从小到大排序就构建一个maxHeap，反之则需要minHeap。
+* 利用maxHeap做从小到大排序的Code：
+
+```
+public static void sort(int[] array){
+    heapify(array);
+    for (int i = array.length - 1; i > 0; i--){
+        removeTop(array, i);
+    }
+}
+
+private static void heapify(int[] array){
+    for (int i = (array.length - 2) / 2; i >= 0; i--){
+        siftDown(array, i, array.length);
+    }
+}
+
+private static void removeTop(int[] array, int lastElementIndex){
+    swap(array, 0, lastElementIndex);
+    siftDown(array, 0, lastElementIndex);
+}
+
+private static void swap(int[] array, int i, int j){
+    int tmp = array[i];
+    array[i] = array[j];
+    array[j] = tmp;
+}
+
+private static void siftDown(int[] array, int currentIndex, int heapSize){
+    int temp = array[currentIndex];
+    int childIndex = 2 * currentIndex + 1;
+    while (childIndex < heapSize){
+        //选左右子节点大的那个
+        if ((childIndex + 1) < heapSize && array[childIndex + 1] > array[childIndex]){
+            childIndex++;
+        }
+
+        if (temp >= array[childIndex]){
+            break;
+        }
+        //类似insertion sort那样做shift
+        array[currentIndex] = array[childIndex];
+        currentIndex = childIndex;
+        childIndex = 2 * childIndex + 1;
+    }
+
+    array[currentIndex] = temp;
+}
+```
+
 ### Non-linear time sorting相关Leetcode题目
 
 * Merge Sort
