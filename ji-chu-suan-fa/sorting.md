@@ -311,7 +311,7 @@ private static void merge(int[] array, int start, int mid, int end){
 * 这个算法的思路是利用Heap的特性，通过循环"删除"heap的顶，并把被删除的元素留在当前heap有效大小的末尾，来达到排序效果。如果是从小到大排序就构建一个maxHeap，反之则需要minHeap。
 * 利用maxHeap做从小到大排序的Code：
 
-```
+```java
 public static void sort(int[] array){
     heapify(array);
     for (int i = array.length - 1; i > 0; i--){
