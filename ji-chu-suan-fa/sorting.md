@@ -221,7 +221,7 @@ _Hoare's Partition （Two way partition）_
 
 * 这个partition思路是把四种分成了左右两拨，一波\<pivot, 一波>=pivot, partition method返回的是左侧分界点。所以接下去的左右递归，分界点是相邻的。
 
-```
+```java
 private static void quickSort(int[] array, int startIndex, int endIndex){
     if (startIndex < endIndex) {
         int pivot = partition(array, startIndex, endIndex);
@@ -266,6 +266,10 @@ public static int partition(int[] array, int startIndex, int endIndex)
 * 也是一种基于divide and conquer的排序算法，区别在于quick sort类似于pre-order traverse的递归。而merge sort类似于post-order traverse的递归
 
 ```java
+public static void sort(int[] array){
+    mergeSort(array, 0, array.length - 1);
+}
+
 private static void mergeSort(int[] array, int start, int end){
     if (start < end){
         int mid = (start + end) / 2;
