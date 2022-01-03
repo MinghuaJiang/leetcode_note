@@ -2,18 +2,18 @@
 
 ### Sorting Algorithm Comparison
 
-| Sorting Algorithm | Time Complexity                                    | Space Complexity                  | Stableness           |
-| ----------------- | -------------------------------------------------- | --------------------------------- | -------------------- |
-| Bubble Sort       | <p>Best Case O(N)</p><p>Worst Case O(N^2)</p>      | O(1)                              | Stable               |
-| Insertion Sort    | <p>Best Case O(N)</p><p>Worst Case O(N^2)</p>      | O(1)                              | Stable               |
-| Selection Sort    | <p>Best Case O(N^2)</p><p>Worst Case O(N^2)</p>    | O(1)                              | Instable (4 2 3 4 1) |
-| Quick Sort        | <p>Best Case O(NLogN) </p><p>Worst Case O(N^2)</p> | Best Case O(logN) Worst Case O(N) | Instable             |
-| Merge Sort        | <p>Best Case O(NLogN) </p><p>Worst Case O(N^2)</p> | O(N)                              | Stable               |
-| Heap Sort         | <p>Best Case O(N)</p><p>Worst Case O(NLogN)</p>    |                                   | Instable             |
-| Counting Sort     |                                                    |                                   |                      |
-| Bucket Sort       |                                                    |                                   |                      |
-| Radix Sort        |                                                    |                                   |                      |
-|                   |                                                    |                                   |                      |
+| Sorting Algorithm | Time Complexity                                                                | Space Complexity                  | Stableness           |
+| ----------------- | ------------------------------------------------------------------------------ | --------------------------------- | -------------------- |
+| Bubble Sort       | <p>Best Case O(N)</p><p>Average Case O(N^2)</p><p>Worst Case O(N^2)</p>        | O(1)                              | Stable               |
+| Insertion Sort    | <p>Best Case O(N)</p><p>Average Case O(N^2)</p><p>Worst Case O(N^2)</p>        | O(1)                              | Stable               |
+| Selection Sort    | <p>Best Case O(N^2)</p><p>Average Case O(N^2)</p><p>Worst Case O(N^2)</p>      | O(1)                              | Instable (4 2 3 4 1) |
+| Quick Sort        | <p>Best Case O(NLogN) </p><p>Average Case O(NLogN)</p><p>Worst Case O(N^2)</p> | Best Case O(logN) Worst Case O(N) | Instable             |
+| Merge Sort        | <p>Best Case O(NLogN) </p><p>Average Case O(NLogN)</p><p>Worst Case O(N^2)</p> | O(N)                              | Stable               |
+| Heap Sort         | <p>Best Case O(N)</p><p>Average Case O(NLogN)</p><p>Worst Case O(NLogN)</p>    | O(1)                              | Instable             |
+| Counting Sort     |                                                                                |                                   |                      |
+| Bucket Sort       |                                                                                |                                   |                      |
+| Radix Sort        |                                                                                |                                   |                      |
+|                   |                                                                                |                                   |                      |
 
 ### Bubble Sort
 
