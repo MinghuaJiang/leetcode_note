@@ -476,6 +476,10 @@ public static void sort(double[] array){
 }
 ```
 
+* 对于桶排序来说，如果每个桶的元素分配比较均匀，那么就可以达到O(N),不然如果有个桶元素特别多的话就会退化到O(NLogN)
+
+### Radix Sort
+
 
 
 ### Comparison based sorting相关Leetcode题目
