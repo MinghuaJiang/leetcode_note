@@ -10,7 +10,7 @@
 | Quick Sort        | <p>Best Case O(NLogN) </p><p>Average Case O(NLogN)</p><p>Worst Case O(N^2)</p> | Best Case O(logN) Worst Case O(N) | Instable             |
 | Merge Sort        | <p>Best Case O(NLogN) </p><p>Average Case O(NLogN)</p><p>Worst Case O(N^2)</p> | O(N)                              | Stable               |
 | Heap Sort         | <p>Best Case O(N)</p><p>Average Case O(NLogN)</p><p>Worst Case O(NLogN)</p>    | O(1)                              | Instable             |
-| Counting Sort     |                                                                                |                                   |                      |
+| Counting Sort     | O(N + M)                                                                       | O(M)/O(N + M)                     | Instable/stable      |
 | Bucket Sort       |                                                                                |                                   |                      |
 | Radix Sort        |                                                                                |                                   |                      |
 |                   |                                                                                |                                   |                      |
@@ -358,13 +358,87 @@ private static void siftDown(int[] array, int currentIndex, int heapSize){
 }
 ```
 
-### Non-linear time sorting相关Leetcode题目
+### Counting Sort
+
+* 这个算法基于用一堆数字的最大值和最小值的区间构建一个bucket array, 然后根据每个值和最小值的offset来决定丢到哪个bucket里面，最后再循环bucket来排序原数组
+* 上面这个算法是instable的sort,实现代码如下
+
+```java
+public static void sort(int[] array){
+    int min = array[0];
+    int max = array[0];
+    // 获得最大最小值
+    for (int i = 1; i < array.length;i++){
+        min = Math.min(min, array[i]);
+        max = Math.max(max, array[i]);
+    }
+
+    // 把每个数字放进对应的bucket, count加1
+    int[] buckets = new int[max - min + 1];
+    for (int i = 0; i < array.length;i++){
+        buckets[array[i] - min]++;
+    }
+
+    // 从头遍历bucket array填充结果
+    int index = 0;
+    for(int i = 0;i < buckets.length;i++){
+        for(int j = 0; j < buckets[i]; j++){
+            array[index++] = min + i;
+        }
+    }
+}
+```
+
+* 上面这版本的时间复杂度是O(N+M), 空间复杂度是O(M)
+* Counting Sort也可以做成stable的版本，做法是先用bucket数组变形。变形的思路是算出从头到当前bucket位置的range sum。然后从右往左遍历原始数组的copy，bucket上的数字对应原始数组的index。如果让了一个值就在bucket上减一，这样就保证排在前那个相同的数字从bucket数字look up到的index会小一，从而保证了相同的先后顺序。
+
+```java
+public static void sort(int[] array){
+    int min = array[0];
+    int max = array[0];
+    // 获得最大最小值
+    for (int i = 1; i < array.length;i++){
+        min = Math.min(min, array[i]);
+        max = Math.max(max, array[i]);
+    }
+
+    // 把每个数字放进对应的bucket, count加1
+    int[] buckets = new int[max - min + 1];
+    for (int i = 0; i < array.length;i++){
+        buckets[array[i] - min]++;
+    }
+
+    // 变形为prefix sum array
+    for (int i = 1; i < buckets.length; i++){
+        buckets[i] += buckets[i - 1];
+    }
+
+    int[] copiedArray = new int[array.length];
+    for (int i = 0; i < array.length;i++){
+        copiedArray[i] = array[i];
+    }
+
+    // 倒序遍历数组，输出结果
+    for (int i = array.length - 1; i >= 0; i--){
+        array[buckets[array[i] - min] - 1] = copiedArray[i];
+        buckets[array[i] - min]--;
+    }
+}
+```
+
+* 上面这个做法的时间和空间复杂度是O(N + M)
+* 另外一个做法是可以在每个bucket分配一个LinkedList或者Queue。然后最后还是按照bucket从左到右输出，这样时间和空间复杂度也是O(N + M)
+* Counting Sort的主要限制是不支持非整数数组，第二是如果最大值和最小值差大多，空间和时间复杂度也会很大
+
+### Bucket Sort
+
+### Comparison based sorting相关Leetcode题目
 
 * Merge Sort
 * Quick Sort
 * Heap Sort
 
-### Linear time sorting相关Leetcode题目
+### Non-comparison based sorting相关Leetcode题目
 
 * Counting Sort
 * Bucket Sort
