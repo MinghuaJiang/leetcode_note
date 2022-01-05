@@ -46,7 +46,7 @@
 * [Union Find](jin-jie-shu-ju-jie-gou/union-find.md)
 * [Binary Indexed Tree](jin-jie-shu-ju-jie-gou/binary-indexed-tree.md)
 * [Segmentation Tree](jin-jie-shu-ju-jie-gou/segmentation-tree.md)
-* [Page 1](jin-jie-shu-ju-jie-gou/page-1.md)
+* [Skip List](jin-jie-shu-ju-jie-gou/skip-list.md)
 
 ## Leetcode专题
 
