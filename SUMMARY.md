@@ -8,6 +8,8 @@
 * [Binary Search](ji-chu-suan-fa/binary-search.md)
 * [Breadth First Search](ji-chu-suan-fa/breadth-first-search.md)
 * [Depth First Search](ji-chu-suan-fa/depth-first-search.md)
+* [Topological Sort](ji-chu-suan-fa/topological-sort.md)
+* [Shortest Path](ji-chu-suan-fa/shortest-path.md)
 
 ## 基础数据结构
 
