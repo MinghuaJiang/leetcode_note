@@ -523,6 +523,7 @@ public static void radixSort(String[] array){
 ### Comparison based sorting相关Leetcode题目
 
 * Merge Sort
+  * [21. Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists)
   * [23. Merge K Sorted List](https://leetcode.com/problems/merge-k-sorted-lists/)
   * [88. Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array)
   * [148. Sort List](https://leetcode.com/problems/sort-list)
