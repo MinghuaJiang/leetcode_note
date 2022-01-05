@@ -526,9 +526,6 @@ public static void radixSort(String[] array){
   * [23. Merge K Sorted List](https://leetcode.com/problems/merge-k-sorted-lists/)
   * [88. Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array)
   * [148. Sort List](https://leetcode.com/problems/sort-list)
-  * [315. Count of Smaller Numbers After Self](https://leetcode.com/problems/count-of-smaller-numbers-after-self)
-  * [327. Count of Range Sum](https://leetcode.com/problems/count-of-range-sum)
-  * [493. Reverse Pairs](https://leetcode.com/problems/reverse-pairs)
 * Quick Sort
   * [912. Sort an Array](https://leetcode.com/problems/sort-an-array)
 * Insertion Sort
@@ -554,6 +551,11 @@ public static void radixSort(String[] array){
 
 * [75. Sort Colors](https://leetcode.com/problems/sort-colors)
 * [283. Move Zeroes](https://leetcode.com/problems/move-zeroes)
+
+### QuickSelect相关Leetcode题目
+
+* [215. Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array)
+* [973. K Closest Points to Origin](https://leetcode.com/problems/k-closest-points-to-origin)
 
 ###
 
