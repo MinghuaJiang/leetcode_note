@@ -425,7 +425,7 @@ public static void sort(int[] array){
 ```
 
 * 上面这个做法的时间和空间复杂度是O(N + M)
-* 另外一个做法是可以在每个bucket分配一个LinkedList或者Queue。然后最后还是按照bucket从左到右输出，这样时间和空间复杂度也是O(N + M)
+* 另外一个做法是可以在每个bucket分配一个LinkedList或者Queue。然后最后还是按照bucket从左到右输出，这样时间和空间复杂度也是O(N + M)， Leetcode里把这种做法归为Bucket Sort。
 * Counting Sort的主要限制是不支持非整数数组，第二是如果最大值和最小值差大多，空间和时间复杂度也会很大
 
 ### Bucket Sort
@@ -523,14 +523,37 @@ public static void radixSort(String[] array){
 ### Comparison based sorting相关Leetcode题目
 
 * Merge Sort
+  * [23. Merge K Sorted List](https://leetcode.com/problems/merge-k-sorted-lists/)
+  * [88. Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array)
+  * [148. Sort List](https://leetcode.com/problems/sort-list)
+  * [315. Count of Smaller Numbers After Self](https://leetcode.com/problems/count-of-smaller-numbers-after-self)
+  * [327. Count of Range Sum](https://leetcode.com/problems/count-of-range-sum)
+  * [493. Reverse Pairs](https://leetcode.com/problems/reverse-pairs)
 * Quick Sort
-* Heap Sort
+  * [912. Sort an Array](https://leetcode.com/problems/sort-an-array)
+* Insertion Sort
+  * [147. Insertion Sort List](https://leetcode.com/problems/insertion-sort-list)
 
 ### Non-comparison based sorting相关Leetcode题目
 
 * Counting Sort
+  * [274. H-Index](https://leetcode.com/problems/h-index)
+  * [561. Array Partition I](https://leetcode.com/problems/array-partition-i)
+  * [1051. Height Checker](https://leetcode.com/problems/height-checker)
+  * [1122. Relative Sort Array](https://leetcode.com/problems/relative-sort-array)
 * Bucket Sort
+  * [164. Maximum Gap](https://leetcode.com/problems/maximum-gap)
+  * [220. Contains Duplicate III](https://leetcode.com/problems/contains-duplicate-iii)
+  * [347. Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements)
+  * [451. Sort Characters By Frequency](https://leetcode.com/problems/sort-characters-by-frequency)
+  * [692. Top K Frequent Words](https://leetcode.com/problems/top-k-frequent-words)
 * Radix Sort
+  * [164. Maximum Gap](https://leetcode.com/problems/maximum-gap)
+
+### Partition相关Leetcode题目
+
+* [75. Sort Colors](https://leetcode.com/problems/sort-colors)
+* [283. Move Zeroes](https://leetcode.com/problems/move-zeroes)
 
 ###
 
