@@ -561,7 +561,6 @@ Non-comparison based sorting相关Leetcode题目
 
 * Counting Sort
   * [274. H-Index](https://leetcode.com/problems/h-index)
-  * [561. Array Partition I](https://leetcode.com/problems/array-partition-i)
   * [1051. Height Checker](https://leetcode.com/problems/height-checker)
   * [1122. Relative Sort Array](https://leetcode.com/problems/relative-sort-array)
 * Bucket Sort
