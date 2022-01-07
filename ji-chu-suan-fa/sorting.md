@@ -1,6 +1,6 @@
 # Sorting
 
-### Sorting Algorithm Comparison
+Sorting Algorithm Comparison
 
 | Sorting Algorithm | Time Complexity                                                                | Space Complexity                  | Stableness           |
 | ----------------- | ------------------------------------------------------------------------------ | --------------------------------- | -------------------- |
@@ -483,7 +483,7 @@ public static void sort(double[] array){
 * 如果长度不一样，以最长的字符串为准，不足的地方补0。
 * LSD的代码例子如下
 
-```
+```java
 public static void radixSort(String[] array){
     int maxLength = 0;
     for(int i = 0; i < array.length;i++){
@@ -531,8 +531,33 @@ public static void radixSort(String[] array){
   * [912. Sort an Array](https://leetcode.com/problems/sort-an-array)
 * Insertion Sort
   * [147. Insertion Sort List](https://leetcode.com/problems/insertion-sort-list)
+    * 这道题比较有意思, 因为insertion sort基于array是从右往左查看insertion position的，但是singly linked list是单向的，所以每次需要从左往右寻找插入点，然后创建一个dummy node in case这个点要插在head前面。
+    * 这里通过快慢两个指针来分别做循环和寻找insert position
 
-### Non-comparison based sorting相关Leetcode题目
+```java
+public ListNode insertionSortList(ListNode head) {
+    ListNode dummy = new ListNode(-1);
+    ListNode curr = head;
+
+    while (curr != null){
+        ListNode prev = dummy;
+        // 寻找插入点
+        while (prev.next != null && prev.next.val < curr.val){
+            prev = prev.next;
+        }
+
+        // 插入元素
+        ListNode next = curr.next;
+        curr.next = prev.next;
+        prev.next = curr;
+        curr = next;     
+    }
+    
+    return dummy.next;
+}
+```
+
+Non-comparison based sorting相关Leetcode题目
 
 * Counting Sort
   * [274. H-Index](https://leetcode.com/problems/h-index)
