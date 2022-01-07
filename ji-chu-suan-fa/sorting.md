@@ -565,8 +565,7 @@ Non-comparison based sorting相关Leetcode题目
   * [1122. Relative Sort Array](https://leetcode.com/problems/relative-sort-array)
 * Bucket Sort
   * [164. Maximum Gap](https://leetcode.com/problems/maximum-gap)
-  * [220. Contains Duplicate III](https://leetcode.com/problems/contains-duplicate-iii)
-  * [347. Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements)
+  * [220. Contains Duplicate II](https://leetcode.com/problems/contains-duplicate-iii)I
   * [451. Sort Characters By Frequency](https://leetcode.com/problems/sort-characters-by-frequency)
   * [692. Top K Frequent Words](https://leetcode.com/problems/top-k-frequent-words)
 * Radix Sort
@@ -580,6 +579,7 @@ Non-comparison based sorting相关Leetcode题目
 ### QuickSelect相关Leetcode题目
 
 * [215. Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array)
+* [347. Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements)
 * [973. K Closest Points to Origin](https://leetcode.com/problems/k-closest-points-to-origin)
 
 ###
