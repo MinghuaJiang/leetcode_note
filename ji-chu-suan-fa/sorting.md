@@ -445,26 +445,24 @@ public static void sort(double[] array){
     }
 
     // 初始化桶
-    List<List<Double>> buckets = new ArrayList<List<Double>>(array.length);
-    for (int i = 0;i < array.length;i++){
+    int bucketNum = array.length;
+    List<List<Double>> buckets = new ArrayList<List<Double>>(bucketNum);
+    for (int i = 0;i < bucketNum;i++){
         buckets.add(new LinkedList<Double>());
     }
 
-    int bucketNum = array.length;
     // 把元素放入bucket
     for (int i = 0; i < array.length; i++){
         int currentIndex = (int)((array[i] - min) * (bucketNum - 1) / (max - min));
         buckets.get(currentIndex).add(array[i]);
     }
 
-    // 每个桶做排序
-    for (int i = 0; i < buckets.size(); i++){
-        Collections.sort(buckets.get(i));
-    }
-
-    // 输出结果
+    // 输出所有桶的结果
     int index = 0;
     for (List<Double> bucket : buckets){
+        //每个桶内部排序
+        Collections.sort(bucket);
+        // 输出结果
         for(double element : bucket){
             array[index++] = element;
         }
