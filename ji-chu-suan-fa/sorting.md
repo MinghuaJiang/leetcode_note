@@ -446,6 +446,8 @@ public static void sort(double[] array){
 
     // 初始化桶
     int bucketNum = array.length;
+    // 这一部分需要double，用int的话就不能先确定bucketNum
+    double bucketSize = (double)(max - min) / (bucketNum - 1);
     List<List<Double>> buckets = new ArrayList<List<Double>>(bucketNum);
     for (int i = 0;i < bucketNum;i++){
         buckets.add(new LinkedList<Double>());
@@ -453,7 +455,7 @@ public static void sort(double[] array){
 
     // 把元素放入bucket
     for (int i = 0; i < array.length; i++){
-        int currentIndex = (int)((array[i] - min) * (bucketNum - 1) / (max - min));
+        int currentIndex = (int)((array[i] - min) / bucketSize);
         buckets.get(currentIndex).add(array[i]);
     }
 
