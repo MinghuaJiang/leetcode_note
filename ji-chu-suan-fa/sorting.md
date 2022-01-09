@@ -233,6 +233,7 @@ public static int partition(int[] array, int startIndex, int endIndex)
 }
 ```
 
+* Hoare's partition不可以用endIndex作为pivot。
 * Hoare's partition其实也可以做成three-way。和two-way的区别就是一上来保证pivot不会被swap,最后再把pivot swap到分界点上。返回分界点位置。
 
 ```java
@@ -261,9 +262,59 @@ private static int partition(int[] array, int startIndex, int endIndex){
 }
 ```
 
+#### Hoare's Partition vs Lomuto Partition
+
+* 他们的时间复杂度是一样的，最大的区别在于Hoare's partition需要更少的swap operation。因为Hoare's是把左边换到最右边的指针位置，而Lomuto只是换到当前快指针位置，所以会做很多不必要的交换，极端的情况，如果左右本来就是以pivot大小分的，Hoare's partition一次交换都不需要，而Lomuto partition还是需要自己和自己交换。
+
 #### Quick Select
 
-这个算法是基于quicksort partition的思想，解决类似计算top k类问题的一种O(N)的解法。每次通过去某一边的partition而不是两边都去来做到O(N)的复杂度，感兴趣的读者可以自行证明。
+* 这个算法是基于quicksort partition的思想，解决类似计算top k类问题的一种O(N)的解法。每次通过去某一边的partition而不是两边都去来做到O(N)的复杂度，感兴趣的读者可以自行证明。
+* The kth largest element in an array
+
+```java
+public int findKthLargest(int[] nums, int k) {
+    return this.quickSelect(nums, 0, nums.length - 1,  nums.length + 1 - k);
+}
+
+private int quickSelect(int[] array, int startIndex, int endIndex, int k){
+    if (startIndex == endIndex){
+        return array[startIndex];
+    }
+
+    int pivotIndex = this.partition(array, startIndex, endIndex);
+
+    if (pivotIndex - startIndex + 1 == k){
+        return array[pivotIndex];
+    }
+
+    if (pivotIndex - startIndex + 1 < k){
+        return quickSelect(array, pivotIndex + 1, endIndex, k - 1 + startIndex - pivotIndex);
+    }else{
+        return quickSelect(array, startIndex, pivotIndex - 1, k);
+    }
+}
+
+private int partition(int[] array, int startIndex, int endIndex){
+    int pivot = array[startIndex];
+    int currentIndex = startIndex;
+    for (int i = startIndex + 1; i <= endIndex; i++){
+        if (array[i] <= pivot){
+            currentIndex++;
+            swap(array, currentIndex, i);
+        }
+    }
+
+    swap(array, startIndex, currentIndex);
+    return currentIndex;
+}
+
+
+private void swap(int[] array, int i, int j){
+    int tmp = array[i];
+    array[i] = array[j];
+    array[j] = tmp;
+}
+```
 
 ### Merge Sort
 
