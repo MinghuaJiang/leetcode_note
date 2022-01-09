@@ -130,9 +130,10 @@ public static void sort(int[] array){
 
 #### Two Partition Algorithm
 
-_Lomuto Partition （Three-way partition)_
+_Lomuto Partition （单方向Three-way partition)_
 
-* 这个partition思路是把数组分隔成<=pivot， pivot和>pivot的三波（等号在哪边都一样），partition method返回的是pivot的index。所以接下去左右递归分别是以pivot - 1和pivot + 1作为边界的。
+* 这个partition思路是单向快慢指针，通常把数组分隔成<=pivot， pivot和>pivot的三波（等号在哪边都一样）
+* 做法是先把快指针遇到的属于左边partition的交换给慢指针，然后前进慢指针。这样就分出了以pivot为分界（慢指针位置）的左右两块，最后只要把pivi就把ot和这个慢指针交换就把数组分成了三波，此处partition method返回的是pivot的index。所以接下去左右递归分别是以pivot - 1和pivot + 1作为边界的。
 
 ```java
 public static void sort(int[] array){
@@ -188,37 +189,13 @@ private static int partition(int[] array, int startIndex, int endIndex){
 }
 ```
 
-* _另外Lomuto也可以做成左右双方向循环，没有单方向这么简单直白。_
-
 ```java
-private static int partition(int[] array, int startIndex, int endIndex){
-    int pivot = array[startIndex];
-    int left = startIndex;
-    int right = endIndex;
-    while (left < right){
-        while (left < right && array[right] > pivot){
-            right--;
-        }
-
-        while (left < right && array[left] <= pivot){
-            left++;
-        }
-
-        if (left < right){
-            swap(array, left, right);
-        }
-
-        array[startIndex] = array[left];
-        array[left] = pivot;
-
-        return left;
-    }
-}
 ```
 
-_Hoare's Partition （Two way partition）_
+_Hoare's Partition （双方向Two way partition）_
 
-* 这个partition思路是把四种分成了左右两拨，一波\<pivot, 一波>=pivot, partition method返回的是左侧分界点。所以接下去的左右递归，分界点是相邻的。
+* 这个partition思路用双方向双指针，通常把数组分成了左右两拨，一波\<pivot, 一波>=pivot，pivot不一定在分界点上。&#x20;
+* 做法是左右两个指针始终保持在属于左右两拨数据的分界点，然后互相交换数据，partition method返回的是左侧分界点。因为是two-way partition。接下去的左右递归，分界点是相邻的，具体怎么分取决于pivot在哪边。
 
 ```java
 private static void quickSort(int[] array, int startIndex, int endIndex){
@@ -253,6 +230,34 @@ public static int partition(int[] array, int startIndex, int endIndex)
     }
 
     return right;
+}
+```
+
+* Hoare's partition其实也可以做成three-way。和two-way的区别就是一上来保证pivot不会被swap,最后再把pivot swap到分界点上。返回分界点位置。
+
+```java
+private static int partition(int[] array, int startIndex, int endIndex){
+    int pivot = array[startIndex];
+    int left = startIndex;
+    int right = endIndex;
+    while (left < right){
+        while (left < right && array[right] > pivot){
+            right--;
+        }
+
+        while (left < right && array[left] <= pivot){
+            left++;
+        }
+
+        if (left < right){
+            swap(array, left, right);
+        }
+
+        array[startIndex] = array[left];
+        array[left] = pivot;
+
+        return left;
+    }
 }
 ```
 
