@@ -229,11 +229,14 @@ public static int partition(int[] array, int startIndex, int endIndex)
         right--;
     }
 
+    // right是左分区边界，left是右分区边界
+    // 这里如果返回right，接下去的递归是pivot和pivot + 1
+    // 如果返回left，接下去的递归是pivot - 1和pivot
     return right;
 }
 ```
 
-* Hoare's partition不可以用endIndex作为pivot。
+* Hoare's partition的two-way partition版本不可以用endIndex作为pivot。
 * Hoare's partition其实也可以做成three-way。和two-way的区别就是一上来保证pivot不会被swap,最后再把pivot swap到分界点上。返回分界点位置。
 
 ```java
