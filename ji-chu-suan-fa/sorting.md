@@ -232,9 +232,11 @@ public static int partition(int[] array, int startIndex, int endIndex)
     }
 
     // right是左分区边界，left是右分区边界
-    // 这里如果返回right，接下去的递归是pivot和pivot + 1
-    // 如果返回left，接下去的递归是pivot - 1和pivot
-    return right;
+    // 不过这里需要check最后相遇的点是不是大于pivot，
+    // 那样的话它就属于右边界，所以要返回right - 1
+    // 这里如果返回左分区边界，接下去的递归是pivot和pivot + 1
+    // 如果返回右分区边界，接下去的递归是pivot - 1和pivot
+    return array[right] > pivot ? right - 1 : right;
 }
 ```
 
