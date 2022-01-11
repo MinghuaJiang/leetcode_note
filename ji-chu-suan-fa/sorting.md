@@ -209,6 +209,36 @@ private static void quickSort(int[] array, int startIndex, int endIndex){
     }
 }
 
+private static int partition(int[] array, int startIndex, int endIndex)
+{
+    int pivot = array[startIndex];
+    int left = startIndex;
+    int right = endIndex;
+
+    while (true) {
+        while (array[left] < pivot) {
+            left++;
+        }
+
+        while (array[right] > pivot) {
+            right--;
+        }
+
+        if (left >= right){
+            return right;
+        }
+
+        swap(array, left, right);
+        left++;
+        right--;
+    }
+}
+```
+
+* 上面这个写法，在返回前确保了right是左分界，left是右分界。
+* 还有一种写法是，while循环的条件是左右不相遇，一旦相遇了，循环外需要额外check一下当前相遇点是左分界还是右分界
+
+```java
 public static int partition(int[] array, int startIndex, int endIndex)
 {
     int pivot = array[startIndex];
@@ -240,7 +270,35 @@ public static int partition(int[] array, int startIndex, int endIndex)
 }
 ```
 
-* Hoare's partition的two-way partition版本不可以用endIndex作为pivot。
+* Hoare's partition的two-way partition版本如果用endIndex作为pivot的话，需要check一下相遇的点是不是endIndex,如果是的话，right - 1才代表左边界。要不然就死循环了。
+
+```java
+private int partition(int[] array, int startIndex, int endIndex)
+{
+    int pivot = array[endIndex];
+    int left = startIndex;
+    int right = endIndex;
+
+    while (true) {
+        while (array[left] < pivot) {
+            left++;
+        }
+
+        while (array[right] > pivot) {
+            right--;
+        }
+
+        if (left >= right){
+            return right == endIndex ? right - 1: right;
+        }
+
+        swap(array, left, right);
+        left++;
+        right--;
+    }
+}
+```
+
 * Hoare's partition其实也可以做成three-way。和two-way的区别就是一上来保证pivot不会被swap,最后再把pivot swap到分界点上。返回分界点位置。
 
 ```java
