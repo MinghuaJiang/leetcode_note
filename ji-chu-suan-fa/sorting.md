@@ -270,7 +270,7 @@ private static int partition(int[] array, int startIndex, int endIndex){
 #### Hoare's Partition vs Lomuto Partition
 
 * 他们的时间复杂度是一样的，最大的区别在于Hoare's partition需要更少的swap operation。因为Hoare's是把左边换到最右边的指针位置，而Lomuto只是换到当前快指针位置，所以会做很多不必要的交换，极端的情况，如果左右本来就是以pivot大小分的，Hoare's partition一次交换都不需要，而Lomuto partition还是需要自己和自己交换。
-* 对于等于pivot的值，Lomuto partition是要么放在pivot的左边要么放在pivot的右边。而对于Hoare's two way partition来说，两边是都可以有的。
+* 对于等于pivot的值，Lomuto partition是要么放在pivot的左边要么放在pivot的右边。而对于Hoare's two-way partition来说，两边是都可以有的。
 
 #### Quick Select
 
