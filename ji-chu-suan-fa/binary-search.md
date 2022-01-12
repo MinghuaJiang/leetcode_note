@@ -50,13 +50,13 @@ private int searchFirst(int[] nums, int target){
 
 ```
 
-* 双指针左节点面对面就退出。left < right - 1。这种做法比较通用，不会死循环， 缺点是退出循环后找到的是两个candidate，所以要分别check这两个candidate哪个更满足条件。
+* 双指针左节点面对面就退出。left + 1 < right。这种做法比较通用，不会死循环， 缺点是退出循环后找到的是两个candidate，所以要分别check这两个candidate哪个更满足条件。
 
 ```java
 private int searchLast(int[] nums, int target){
     int low = 0;
     int high = nums.length - 1;
-    while (low < high - 1){
+    while (low + 1 < high){
         int mid = low + (high - low) / 2;
         if (nums[mid] == target){
             low = mid;
