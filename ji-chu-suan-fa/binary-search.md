@@ -80,6 +80,7 @@ private int searchFirst(int[] nums, int target){
 
     // 这里需要check low，因为low代表了最后那个candidate
     // 而low = high - 1的时候，high最后可能比low小1，high就有可能是-1。
+    // 如果没有不存在target的情况，那么就不需要做这个check，直接返回low。
     if (nums[low] == target){
         return low;
     }
