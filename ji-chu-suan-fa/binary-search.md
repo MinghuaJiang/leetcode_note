@@ -17,8 +17,47 @@
 
 ### 不同的算法模板
 
-* 双指针左右交错退出， left <= right， 这种情况要么循环里找到了结果，要么就是return -1
+* 双指针左右交错退出， left <= right， 这种情况要么循环里找到了结果，要么就是return -1或者return题目要求的结果
   * 比较适合在数组中找寻满足条件的唯一一个结果的情况
+
+```java
+public int search(int[] nums, int target) {
+    int low = 0;
+    int high = nums.length - 1;
+    while (low <= high){
+        int mid = low + (high - low) / 2;
+        if (nums[mid] == target){
+            return mid;
+        }else if (nums[mid] < target){
+            low = mid + 1;
+        }else{
+            high = mid - 1;
+        }
+    }
+
+    return -1;
+}
+```
+
+```java
+public int searchInsertPosition(int[] nums, int target) {
+    int low = 0;
+    int high = nums.length - 1;
+    while (low <= high){
+        int mid = low + (high - low) / 2;
+        if (nums[mid] == target){
+            return mid;
+        }else if (nums[mid] < target){
+            low = mid + 1;
+        }else{
+            high = mid - 1;
+        }
+    }
+
+    return low;
+}
+```
+
 * 双指针相遇退出，left < right，这种情况循环里找到的是一个candidate，需要额外check这个candidate是否满足条件。
   * 比较适合在数组中找寻第一个满足条件的结果
   * 也可以handle在数组中找唯一一个结果的情况
