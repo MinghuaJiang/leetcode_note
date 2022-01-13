@@ -132,9 +132,9 @@ private int searchLast(int[] nums, int target){
   * [275. H-Index II](https://leetcode.com/problems/h-index-ii)
 * 其它变形题
   * 旋转数组
-    * [33. Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array)
-    * [81. Search in Rotated Sorted Array II](https://leetcode.com/problems/search-in-rotated-sorted-array-ii)
-    * [153. Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array)
+    * [33. Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array) (找唯一target)
+    * [81. Search in Rotated Sorted Array II](https://leetcode.com/problems/search-in-rotated-sorted-array-ii)&#x20;
+    * [153. Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array) （找第一个满足条件的）
     * [154. Find Minimum in Rotated Sorted Array II](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii)
   * 2D数组
     * [74. Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix)
