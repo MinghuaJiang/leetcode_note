@@ -117,3 +117,29 @@ private int searchLast(int[] nums, int target){
     }
 }
 ```
+
+### Leetcode题型
+
+* 在排序数组中找唯一target
+  * [35. Search Insert Position](https://leetcode.com/problems/search-insert-position)
+  * [167. Two Sum II - Input Array Is Sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted)
+  * [374. Guess Number Higher or Lower](https://leetcode.com/problems/guess-number-higher-or-lower)
+* 在数组中找第一个
+  * [34. Find First and Last Position of Element in Sorted](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array)
+  * [162. Find Peak Element](https://leetcode.com/problems/find-peak-element)
+* 在数组中找最后一个
+  * [34. Find First and Last Position of Element in Sorted](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array)
+  * [275. H-Index II](https://leetcode.com/problems/h-index-ii)
+* 其它变形题
+  * 旋转数组
+    * [33. Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array)
+    * [81. Search in Rotated Sorted Array II](https://leetcode.com/problems/search-in-rotated-sorted-array-ii)
+    * [153. Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array)
+    * [154. Find Minimum in Rotated Sorted Array II](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii)
+  * 2D数组
+    * [74. Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix)
+    * [240. Search a 2D Matrix II](https://leetcode.com/problems/search-a-2d-matrix-ii)
+  * 倍乘法
+    * 需要通过倍乘的方式先找到二分搜索范围，再进行二分搜索
+      * [69. Sqrt(x)](https://leetcode.com/problems/sqrtx)
+      * [4. Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays)
