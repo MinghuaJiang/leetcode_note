@@ -141,5 +141,5 @@ private int searchLast(int[] nums, int target){
     * [240. Search a 2D Matrix II](https://leetcode.com/problems/search-a-2d-matrix-ii) (找唯一target)
   * 倍乘法
     * 需要通过倍乘的方式先找到二分搜索范围，再进行二分搜索
-      * [69. Sqrt(x)](https://leetcode.com/problems/sqrtx)
+      * [69. Sqrt(x)](https://leetcode.com/problems/sqrtx) (可以是找唯一解，也可以是找最后一个满足条件的）
       * [4. Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays)
