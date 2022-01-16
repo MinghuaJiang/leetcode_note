@@ -121,6 +121,7 @@ private int searchLast(int[] nums, int target){
 ### Leetcode题型
 
 * 在排序数组中找唯一target
+  * [4. Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays)
   * [35. Search Insert Position](https://leetcode.com/problems/search-insert-position)
   * [167. Two Sum II - Input Array Is Sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted)
   * [374. Guess Number Higher or Lower](https://leetcode.com/problems/guess-number-higher-or-lower)
@@ -142,4 +143,3 @@ private int searchLast(int[] nums, int target){
   * 倍乘法
     * 需要通过倍乘的方式先找到二分搜索范围，再进行二分搜索
       * [69. Sqrt(x)](https://leetcode.com/problems/sqrtx) (可以是找唯一解，也可以是找最后一个满足条件的）
-      * [4. Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays)
