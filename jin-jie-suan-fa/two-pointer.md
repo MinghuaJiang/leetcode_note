@@ -9,7 +9,6 @@
 #### 快慢指针
 
 * LinkedList
-  *
   * [61. Rotate List](https://leetcode.com/problems/rotate-list)
   * [86. Partition List](https://leetcode.com/problems/partition-list)
   * [80. Remove Duplicates from Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii)
