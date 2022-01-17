@@ -15,6 +15,44 @@
   * [141. Linked List Cycle](https://leetcode.com/problems/linked-list-cycle)
   * [142. Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii)
   * [143. Reorder List](https://leetcode.com/problems/reorder-list)
+
+{% code title="RotateList.java" %}
+```java
+public ListNode rotateRight(ListNode head, int k) {
+    if (head == null){
+        return null;
+    }
+
+    ListNode fast = head;
+    int length = 0;
+    while (fast != null) {
+        fast = fast.next;
+        length++;
+    }
+
+    k = k % length;
+
+    fast = head;
+    while (fast != null && k > 0){
+        fast = fast.next;
+        k--;
+    }
+
+    ListNode slow = head;
+    while (fast != null && fast.next != null){
+        fast = fast.next;
+        slow = slow.next;
+    }
+
+    fast.next = head;
+    ListNode newHead = slow.next;
+    slow.next = null;
+
+    return newHead;
+}
+```
+{% endcode %}
+
 * Array
   * [80. Remove Duplicates from Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii)
 
