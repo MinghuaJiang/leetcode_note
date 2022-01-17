@@ -11,12 +11,12 @@
 
 * LinkedList
   * [61. Rotate List](https://leetcode.com/problems/rotate-list)
-  * [80. Remove Duplicates from Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii)
   * [82. Remove Duplicates from Sorted List II](https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii)
   * [141. Linked List Cycle](https://leetcode.com/problems/linked-list-cycle)
   * [142. Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii)
   * [143. Reorder List](https://leetcode.com/problems/reorder-list)
 * Array
+  * [80. Remove Duplicates from Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii)
 
 #### 双方向双指针
 
