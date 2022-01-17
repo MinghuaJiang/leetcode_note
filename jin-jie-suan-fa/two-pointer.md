@@ -2,7 +2,7 @@
 
 ### 基本思路
 
-* 这个技巧常运用在数组，LinkedList中，主要分为单向快慢指针和双方向双指针, LinkedList考题一般是Singly Linked List，所以通常只能用快慢指针，数组题两个技巧都能用，还有一种同方向双指针通常只用在merge list或者merge array上。
+* 这个技巧常运用在数组，LinkedList中，主要分为单向快慢指针和双方向双指针, LinkedList考题一般是Singly Linked List，所以通常只能用快慢指针，数组题两个技巧都能用。
 * 下一节要讲的Sliding Window也属于快慢双指针的一种技巧。
 
 ### 常见Leetcode题型
@@ -18,6 +18,7 @@
   * [142. Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii)
   * [143. Reorder List](https://leetcode.com/problems/reorder-list)
   * [160. Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists)
+  * [328. Odd Even Linked List](https://leetcode.com/problems/odd-even-linked-list)
 * Array
 
 #### 双方向双指针
@@ -27,9 +28,4 @@
   * [16. 3Sum Closest](https://leetcode.com/problems/3sum-closest)
   * [18. 4Sum](https://leetcode.com/problems/4sum)
   * [259. 3Sum Smaller](https://leetcode.com/problems/3sum-smaller)
-
-#### 同向双指针
-
-* [21. Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists)
-* [88. Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array)
 
