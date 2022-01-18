@@ -10,11 +10,14 @@
 #### 快慢指针
 
 * LinkedList
+  * [19. Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list)
   * [61. Rotate List](https://leetcode.com/problems/rotate-list)
   * [82. Remove Duplicates from Sorted List II](https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii)
+  * [92. Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii)
   * [141. Linked List Cycle](https://leetcode.com/problems/linked-list-cycle)
   * [142. Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii)
   * [143. Reorder List](https://leetcode.com/problems/reorder-list)
+  * [206. Reverse Linked List](https://leetcode.com/problems/reverse-linked-list)
 
 {% code title="RotateList.java" %}
 ```java
