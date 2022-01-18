@@ -27,7 +27,6 @@
 ## 进阶算法
 
 * [Two Pointer](jin-jie-suan-fa/two-pointer.md)
-* [Sliding Window](jin-jie-suan-fa/sliding-window.md)
 * [Prefix Sum](jin-jie-suan-fa/prefix-sum.md)
 * [Sweep Line](jin-jie-suan-fa/sweep-line.md)
 * [Backtracking](jin-jie-suan-fa/backtracking.md)

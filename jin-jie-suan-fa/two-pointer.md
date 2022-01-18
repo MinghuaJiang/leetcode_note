@@ -3,7 +3,11 @@
 ### 基本思路
 
 * 这个技巧常运用在数组，LinkedList中，主要分为单向快慢指针和双方向双指针, LinkedList考题一般是Singly Linked List，所以通常只能用快慢指针，数组题两个技巧都能用。还有一种同向双指针，这种通常是针对input有两个数组或者LinkedList的。
-* 下一节要讲的Sliding Window也属于快慢双指针的一种技巧。
+* 快慢指针有两个比较特别的应用在Leetcode里比较常见
+  * Floyd's Cycle Detection
+    * 思路是利用快慢指针龟兔赛跑，如果有环，快指针总能追上慢指针
+    *
+  * Sliding Window
 
 ### 常见Leetcode题型
 
@@ -14,8 +18,6 @@
   * [61. Rotate List](https://leetcode.com/problems/rotate-list)
   * [82. Remove Duplicates from Sorted List II](https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii)
   * [92. Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii)
-  * [141. Linked List Cycle](https://leetcode.com/problems/linked-list-cycle)
-  * [142. Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii)
   * [143. Reorder List](https://leetcode.com/problems/reorder-list)
   * [203. Remove Linked List Elements](https://leetcode.com/problems/remove-linked-list-elements)
   * [206. Reverse Linked List](https://leetcode.com/problems/reverse-linked-list)
@@ -59,6 +61,10 @@ public ListNode rotateRight(ListNode head, int k) {
 
 * Array
   * [80. Remove Duplicates from Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii)
+* Floyd's Cycle Detection
+  * [141. Linked List Cycle](https://leetcode.com/problems/linked-list-cycle)
+  * [142. Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii)
+  * [287. Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number)
 
 #### 双方向双指针
 
