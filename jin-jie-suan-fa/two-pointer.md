@@ -70,6 +70,7 @@ public ListNode reverseList(ListNode head) {
 ```
 
 * Array
+  * [26. Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array)
   * [80. Remove Duplicates from Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii)
 * Floyd's Cycle Detection
   * [141. Linked List Cycle](https://leetcode.com/problems/linked-list-cycle)
