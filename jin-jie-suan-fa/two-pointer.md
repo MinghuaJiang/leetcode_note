@@ -23,43 +23,51 @@
   * [143. Reorder List](https://leetcode.com/problems/reorder-list)
   * [203. Remove Linked List Elements](https://leetcode.com/problems/remove-linked-list-elements)
   * [206. Reverse Linked List](https://leetcode.com/problems/reverse-linked-list)
+  * LinkedList会有不少题需要reverse list，这里有两种情况，一种是reverse整个list，一种是reverse部分。其实可以把两种情况都看成是reverse一部分直到快指针遇到了一个target node，核心思想是把快指针指向慢指针，然后快指针一上来是head, 慢指针一上来就是那个target node。
 
-{% code title="RotateList.java" %}
 ```java
-public ListNode rotateRight(ListNode head, int k) {
-    if (head == null){
-        return null;
+private ListNode reverseList(ListNode head, ListNode target){
+    ListNode prev = target;
+    ListNode curr = head;
+    while (curr != target){
+        ListNode next = curr.next;
+        curr.next = prev;
+        prev = curr;
+        curr = next;
     }
 
-    ListNode fast = head;
-    int length = 0;
-    while (fast != null) {
-        fast = fast.next;
-        length++;
-    }
-
-    k = k % length;
-
-    fast = head;
-    while (fast != null && k > 0){
-        fast = fast.next;
-        k--;
-    }
-
-    ListNode slow = head;
-    while (fast != null && fast.next != null){
-        fast = fast.next;
-        slow = slow.next;
-    }
-
-    fast.next = head;
-    ListNode newHead = slow.next;
-    slow.next = null;
-
-    return newHead;
+    return prev;
 }
 ```
-{% endcode %}
+
+```java
+public ListNode reverseKGroup(ListNode head, int k) {
+    ListNode dummy = new ListNode(-1, head);
+    ListNode prev = dummy;
+    ListNode curr = head;
+    int count = 1;
+
+    while (curr != null){
+        ListNode next = curr.next;
+        if (count % k == 0){
+            ListNode prevNext = prev.next;
+            prev.next = this.reverseList(prev.next, next);
+            prev = prevNext;
+        }
+
+        curr = next;
+        count++;
+    }
+
+    return dummy.next;
+}
+```
+
+```java
+public ListNode reverseList(ListNode head) {
+    Jareturn this.reverseList(head, null);
+}
+```
 
 * Array
   * [80. Remove Duplicates from Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii)
@@ -67,6 +75,10 @@ public ListNode rotateRight(ListNode head, int k) {
   * [141. Linked List Cycle](https://leetcode.com/problems/linked-list-cycle)
   * [142. Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii)
   * [287. Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number)
+* Sliding Window
+
+```java
+```
 
 #### 双方向双指针
 
