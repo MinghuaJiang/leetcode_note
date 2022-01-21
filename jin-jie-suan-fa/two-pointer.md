@@ -65,7 +65,7 @@ public ListNode reverseKGroup(ListNode head, int k) {
 
 ```java
 public ListNode reverseList(ListNode head) {
-    Jareturn this.reverseList(head, null);
+    return this.reverseList(head, null);
 }
 ```
 
