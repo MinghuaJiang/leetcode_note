@@ -77,9 +77,6 @@ public ListNode reverseList(ListNode head) {
   * [287. Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number)
 * Sliding Window
 
-```java
-```
-
 #### 双方向双指针
 
 * [15. 3Sum](https://leetcode.com/problems/3sum)
