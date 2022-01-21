@@ -71,7 +71,14 @@ public ListNode reverseList(ListNode head) {
 
 * Array
   * [26. Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array)
+  * [27. Remove Element](https://leetcode.com/problems/remove-element)
   * [80. Remove Duplicates from Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii)
+  * [151. Reverse Words in a String](https://leetcode.com/problems/reverse-words-in-a-string)
+  * [186. Reverse Words in a String II](https://leetcode.com/problems/reverse-words-in-a-string-ii)
+  * [189. Rotate Array](https://leetcode.com/problems/rotate-array)
+  * [344. Reverse String](https://leetcode.com/problems/reverse-string)
+  * [541. Reverse String II](https://leetcode.com/problems/reverse-string-ii)
+  * [557. Reverse Words in a String III](https://leetcode.com/problems/reverse-words-in-a-string-iii)
 * Floyd's Cycle Detection
   * [141. Linked List Cycle](https://leetcode.com/problems/linked-list-cycle)
   * [142. Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii)
@@ -84,6 +91,7 @@ public ListNode reverseList(ListNode head) {
 * [16. 3Sum Closest](https://leetcode.com/problems/3sum-closest)
 * [18. 4Sum](https://leetcode.com/problems/4sum)
 * [259. 3Sum Smaller](https://leetcode.com/problems/3sum-smaller)
+* [923. 3Sum With Multiplicity](https://leetcode.com/problems/3sum-with-multiplicity)
 * [1099. Two Sum Less Than K](https://leetcode.com/problems/two-sum-less-than-k)
 
 #### 同向双指针
@@ -94,5 +102,9 @@ public ListNode reverseList(ListNode head) {
 * [88. Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array)
 * [160. Intersection of Two Linked List](https://leetcode.com/problems/intersection-of-two-linked-lists)
 * [328. Odd Even Linked List](https://leetcode.com/problems/odd-even-linked-list)
+* [349. Intersection of Two Arrays](https://leetcode.com/problems/intersection-of-two-arrays)
+* [350. Intersection of Two Arrays II](https://leetcode.com/problems/intersection-of-two-arrays-ii)
 * [445. Add Two Numbers II](https://leetcode.com/problems/add-two-numbers-ii)
+
+
 
