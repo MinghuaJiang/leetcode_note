@@ -50,6 +50,7 @@
 ## Leetcode专题
 
 * [KSum](leetcode-zhuan-ti/ksum.md)
+* [Remove Duplicates](leetcode-zhuan-ti/remove-duplicates.md)
 * [Calculator](leetcode-zhuan-ti/calculator.md)
 * [Stock](leetcode-zhuan-ti/stock.md)
 * [小岛题](leetcode-zhuan-ti/xiao-dao-ti.md)
