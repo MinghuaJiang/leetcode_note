@@ -39,7 +39,7 @@ Hash主要可以应用在以下场景
   * [582. Kill Process](https://leetcode.com/problems/kill-process)
   * [815. Bus Routes](https://leetcode.com/problems/bus-routes)
   * [811. Subdomain Visit Count](https://leetcode.com/problems/subdomain-visit-count)
-* Implement Tree-Like Structure (Including Trie)
+* Implement Tree-Like Structure
+  * [208. Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree)
   * [588. Design In-Memory File System](https://leetcode.com/problems/design-in-memory-file-system)
-  *
 * Sliding Window
