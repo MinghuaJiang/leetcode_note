@@ -8,17 +8,20 @@
     * 思路是利用快慢指针龟兔赛跑，如果有环，快指针总能追上慢指针
     * 如果要定位cycle的交叉点，那么做法是找到快慢指针的相遇点，把其中一个指针放到起点，然后两个指针同时从相遇点和起点一起往前走，那么下一个相遇的点就是这个交叉点。
   * Sliding Window
-    * 这一类题属于快慢双指针和hash的结合
+    * 这一类题属于快慢双指针和hash的结合, 通常有类似一下的模板
 
 ```java
 public int slidngwindow(String s) {
     int left = 0;
     int right = 0;
     while (right < s.length()){
+        c = s.harAt(i);
         if (some criteria meet){
             calculate the result based on current sliding window
             update left 
         }
+        
+        map.put(c, right++);
     }
     
     calculate tail
