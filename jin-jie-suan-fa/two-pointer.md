@@ -15,7 +15,7 @@ public int slidngwindow(String s) {
     int left = 0;
     int right = 0;
     while (right < s.length()){
-        c = s.harAt(i);
+        c = s.charAt(i);
         if (some criteria meet){
             calculate the result based on current sliding window
             update left 
