@@ -116,7 +116,6 @@ public ListNode reverseList(ListNode head) {
   * [727. Minimum Window Subsequence](https://leetcode.com/problems/minimum-window-subsequence)
   * [862. Shortest Subarray with Sum at Least K](https://leetcode.com/problems/shortest-subarray-with-sum-at-least-k)
   * [1004. Max Consecutive Ones III](https://leetcode.com/problems/max-consecutive-ones-iii)
-  * [1044. Longest Duplicate Substring](https://leetcode.com/problems/longest-duplicate-substring)
 
 #### 双方向双指针
 
