@@ -18,7 +18,7 @@ public int slidngwindow(String s) {
         c = s.charAt(i);
         if (some criteria meet){
             calculate the result based on current sliding window
-            update left 
+            update left so that it no longer meet the criteria
         }
         
         map.put(c, right++);
@@ -104,7 +104,6 @@ public ListNode reverseList(ListNode head) {
   * [30. Substring with Concatenation of All Words](https://leetcode.com/problems/substring-with-concatenation-of-all-words)
   * [76. Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring)
   * [159. Longest Substring with At Most Two Distinct Characters](https://leetcode.com/problems/longest-substring-with-at-most-two-distinct-characters)
-  * [187. Repeated DNA Sequences](https://leetcode.com/problems/repeated-dna-sequences)
   * [209. Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum)
   * [239. Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum)
   * [340. Longest Substring with At Most K Distinct Characters](https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters)
