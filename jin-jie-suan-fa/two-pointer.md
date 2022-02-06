@@ -107,7 +107,6 @@ public ListNode reverseList(ListNode head) {
   * [209. Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum)
   * [239. Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum)
   * [340. Longest Substring with At Most K Distinct Characters](https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters)
-  * [395. Longest Substring with At Least K Repeating](https://leetcode.com/problems/longest-substring-with-at-least-k-repeating-characters)
   * [424. Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement)
   * [438. Find All Anagrams in a String](https://leetcode.com/problems/find-all-anagrams-in-a-string)
   * [480. Sliding Window Median](https://leetcode.com/problems/sliding-window-median)
