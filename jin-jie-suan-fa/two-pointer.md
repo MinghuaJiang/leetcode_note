@@ -91,6 +91,7 @@ public ListNode reverseList(ListNode head) {
 * Array
   * [26. Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array)
   * [27. Remove Element](https://leetcode.com/problems/remove-element)
+  * [31. Next Permutation](https://leetcode.com/problems/next-permutation)
   * [80. Remove Duplicates from Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii)
   * [189. Rotate Array](https://leetcode.com/problems/rotate-array)
   * [344. Reverse String](https://leetcode.com/problems/reverse-string)
@@ -111,8 +112,11 @@ public ListNode reverseList(ListNode head) {
   * [438. Find All Anagrams in a String](https://leetcode.com/problems/find-all-anagrams-in-a-string)
   * [480. Sliding Window Median](https://leetcode.com/problems/sliding-window-median)
   * [487. Max Consecutive Ones II](https://leetcode.com/problems/max-consecutive-ones-ii)
+  * [567. Permutation in String](https://leetcode.com/problems/permutation-in-string)
+  * [713. Subarray Product Less Than K](https://leetcode.com/problems/subarray-product-less-than-k)
   * [727. Minimum Window Subsequence](https://leetcode.com/problems/minimum-window-subsequence)
   * [862. Shortest Subarray with Sum at Least K](https://leetcode.com/problems/shortest-subarray-with-sum-at-least-k)
+  * [992. Subarrays with K Different Integers](https://leetcode.com/problems/subarrays-with-k-different-integers)
   * [1004. Max Consecutive Ones III](https://leetcode.com/problems/max-consecutive-ones-iii)
 
 #### 双方向双指针
