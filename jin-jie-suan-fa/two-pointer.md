@@ -8,25 +8,51 @@
     * 思路是利用快慢指针龟兔赛跑，如果有环，快指针总能追上慢指针
     * 如果要定位cycle的交叉点，那么做法是找到快慢指针的相遇点，把其中一个指针放到起点，然后两个指针同时从相遇点和起点一起往前走，那么下一个相遇的点就是这个交叉点。
   * Sliding Window
-    * 这一类题属于快慢双指针和hash的结合, 通常有类似一下的模板
-
-```java
-public int slidngwindow(String s) {
-    int left = 0;
-    int right = 0;
-    while (right < s.length()){
-        c = s.charAt(i);
-        if (some criteria meet){
-            calculate the result based on current sliding window
-            update left so that it no longer meet the criteria
+    * 这一类题属于快慢双指针, 有时会有和hash或者单调queue的结合，通常有两种类型
+      * 求满足条件的最小窗口
+      * ```
+        public int slidngwindow(String s) {
+            int left = 0;
+            int right = 0;
+            int minLength = Integer.MAX_VALUE;
+            while (right < s.length()){
+                // expand the window using right pointer
+                if (some criteria meet){
+                    // calculate the result based on current sliding window
+                    minLength = Math.min(minLength, right - left + 1); 
+                    // shrink the window
+                    // update left so that it no longer meet the criteria
+                }
+                
+                right++;
+            }
+            
+            //calculate tail
+            return minLength;
         }
-        
-        map.put(c, right++);
-    }
-    
-    calculate tail
-}
-```
+        ```
+      * 求满足条件的最大窗口
+      * ```
+        public int slidngwindow(String s) {
+            int left = 0;
+            int right = 0;
+            int maxLength = 0;
+            while (right < s.length()){
+                // expand the window using right pointer
+                // shrink the window as long as the criteria not meet
+                while (some criteria not meet){
+                    left++;
+                }
+                
+                // calculate max as long as the criteria meet
+                maxLength = Math.max(maxLength, right - left + 1);
+                right++;
+            }
+            
+            //calculate tail
+            return minLength;
+        }
+        ```
 
 ### 常见Leetcode题型
 
