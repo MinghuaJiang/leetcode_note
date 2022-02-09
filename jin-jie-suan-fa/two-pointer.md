@@ -40,6 +40,29 @@
             while (right < s.length()){
                 // expand the window using right pointer
                 // shrink the window as long as the criteria not meet
+                if (some criteria not meet){
+                    // update left so that it will meet the criteria
+                    // this will usually take advantage of a hashmap 
+                    // to quickly jump left pointer
+                }
+                
+                // calculate max as long as the criteria meet
+                maxLength = Math.max(maxLength, right - left + 1);
+                right++;
+            }
+            
+            //calculate tail
+            return minLength;
+        }
+        ```
+      * ```
+        public int slidngwindow(String s) {
+            int left = 0;
+            int right = 0;
+            int maxLength = 0;
+            while (right < s.length()){
+                // expand the window using right pointer
+                // shrink the window as long as the criteria not meet
                 while (some criteria not meet){
                     left++;
                 }
@@ -53,6 +76,8 @@
             return minLength;
         }
         ```
+
+### &#x20;&#x20;
 
 ### 常见Leetcode题型
 
