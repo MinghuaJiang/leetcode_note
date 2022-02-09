@@ -186,7 +186,7 @@ public ListNode reverseList(ListNode head) {
     * [567. Permutation in String](https://leetcode.com/problems/permutation-in-string)
     * [992. Subarrays with K Different Integers](https://leetcode.com/problems/subarrays-with-k-different-integers)
   * 寻找窗口个数
-  * [713. Subarray Product Less Than K](https://leetcode.com/problems/subarray-product-less-than-k)
+    * [713. Subarray Product Less Than K](https://leetcode.com/problems/subarray-product-less-than-k)
 
 #### 双方向双指针
 
