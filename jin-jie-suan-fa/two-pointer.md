@@ -27,7 +27,25 @@
                 right++;
             }
             
-            //calculate tail
+            return minLength;
+        }
+        ```
+      * ```
+        public int slidngwindow(String s) {
+            int left = 0;
+            int right = 0;
+            int minLength = Integer.MAX_VALUE;
+            while (right < s.length()){
+                // expand the window using right pointer
+                while (some criteria meet){
+                    // calculate the result based on current sliding window
+                    minLength = Math.min(minLength, right - left + 1); 
+                    left++;
+                }
+                
+                right++;
+            }
+            
             return minLength;
         }
         ```
