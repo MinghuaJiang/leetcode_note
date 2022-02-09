@@ -188,10 +188,10 @@ public ListNode reverseList(ListNode head) {
     * [187. Repeated DNA Sequences](https://leetcode.com/problems/repeated-dna-sequences)
     * [438. Find All Anagrams in a String](https://leetcode.com/problems/find-all-anagrams-in-a-string)
     * [567. Permutation in String](https://leetcode.com/problems/permutation-in-string)
-    * [992. Subarrays with K Different Integers](https://leetcode.com/problems/subarrays-with-k-different-integers)
   * 寻找窗口个数
     * [713. Subarray Product Less Than K](https://leetcode.com/problems/subarray-product-less-than-k)
     * [930. Binary Subarrays With Sum](https://leetcode.com/problems/binary-subarrays-with-sum)
+    * [992. Subarrays with K Different Integers](https://leetcode.com/problems/subarrays-with-k-different-integers)
     * [1248. Count Number of Nice Subarrays](https://leetcode.com/problems/count-number-of-nice-subarrays)
 
 #### 双方向双指针
