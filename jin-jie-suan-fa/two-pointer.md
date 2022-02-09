@@ -177,16 +177,22 @@ public ListNode reverseList(ListNode head) {
     * [3. Longest Substring Without Repeating Characte](https://leetcode.com/problems/longest-substring-without-repeating-characters)r
     * [159. Longest Substring with At Most Two Distinct Characters](https://leetcode.com/problems/longest-substring-with-at-most-two-distinct-characters)
     * [340. Longest Substring with At Most K Distinct Characters](https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters)
+    * [395. Longest Substring with At Least K Repeating](https://leetcode.com/problems/longest-substring-with-at-least-k-repeating-characters)
     * [424. Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement)
     * [487. Max Consecutive Ones II](https://leetcode.com/problems/max-consecutive-ones-ii)
+    * [718. Maximum Length of Repeated Subarray](https://leetcode.com/problems/maximum-length-of-repeated-subarray)
+    * [978. Longest Turbulent Subarray](https://leetcode.com/problems/longest-turbulent-subarray)
     * [1004. Max Consecutive Ones III](https://leetcode.com/problems/max-consecutive-ones-iii)
   * 寻找所有窗口
     * [30. Substring with Concatenation of All Words](https://leetcode.com/problems/substring-with-concatenation-of-all-words)
+    * [187. Repeated DNA Sequences](https://leetcode.com/problems/repeated-dna-sequences)
     * [438. Find All Anagrams in a String](https://leetcode.com/problems/find-all-anagrams-in-a-string)
     * [567. Permutation in String](https://leetcode.com/problems/permutation-in-string)
     * [992. Subarrays with K Different Integers](https://leetcode.com/problems/subarrays-with-k-different-integers)
   * 寻找窗口个数
     * [713. Subarray Product Less Than K](https://leetcode.com/problems/subarray-product-less-than-k)
+    * [930. Binary Subarrays With Sum](https://leetcode.com/problems/binary-subarrays-with-sum)
+    * [1248. Count Number of Nice Subarrays](https://leetcode.com/problems/count-number-of-nice-subarrays)
 
 #### 双方向双指针
 
