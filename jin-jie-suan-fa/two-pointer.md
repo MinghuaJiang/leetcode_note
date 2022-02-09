@@ -9,7 +9,7 @@
     * 如果要定位cycle的交叉点，那么做法是找到快慢指针的相遇点，把其中一个指针放到起点，然后两个指针同时从相遇点和起点一起往前走，那么下一个相遇的点就是这个交叉点。
   * Sliding Window
     * 这一类题属于快慢双指针,  用来避免重复计算，达到O(N)的时间复杂度，有时会有和hash或者单调queue的结合，通常有四种类型
-      * 求满足条件的最小窗口
+      * 求满足条件的最小窗口，这里对条件没有限制，一旦满足条件就开始缩小窗口
       * ```
         public int slidngwindow(String s) {
             int left = 0;
@@ -49,7 +49,7 @@
             return minLength;
         }
         ```
-      * 求满足条件的最大窗口
+      * 求满足条件的最大窗口，这里的条件通常是二分的，一般是考at most something，换言之就是在某个pivot point的左边是满足条件的，右边是不满足条件的。
       * ```
         public int slidngwindow(String s) {
             int left = 0;
@@ -93,7 +93,34 @@
         }
         ```
       * 求满足条件的窗口个数
-      * 求满足条件的所有窗口
+        * 二分条件比较容易，如果遇到三分的那种，例如等于某个target，也就是说更小或者更大的窗口都是不满足条件的，这里一种做法是把这题转换成二分的，计算满足小于等于target的窗口个数 - 满足小于等于target - 1的窗口个数， 然后做法就和计算最大窗口类似了。
+        * ```
+          public int slidingwinowThreeWayPartition(int[] nums, int k) {
+              return this.slidingwinowTwoWayPartition(nums, k) - this.slidingwinowTwoWayPartition(nums, k - 1);
+          }
+          ```
+        * ```
+          public int slidingwinowTwoWayPartition(int[] nums, int k) {
+              int left = 0;
+              int right = 0;
+              int count = 0;
+              while (right < nums.length){
+                  // 把当前值添加到窗口里来
+                  while (left <= right && //不满足的条件){
+                      // 结果去掉左边的值
+                      left++;
+                  }
+
+                  // Every valid window add (right - left + 1) subarray count
+                  count += (right - left + 1);
+
+                  right++;
+              }
+
+              return count;
+          }
+          ```
+        * 求满足条件的所有窗口
 
 ### 常见Leetcode题型
 
