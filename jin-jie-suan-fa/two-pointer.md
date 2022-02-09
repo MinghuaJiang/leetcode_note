@@ -1,6 +1,6 @@
 # Two Pointer
 
-### 基本思路
+### 最大基本思路
 
 * 这个技巧常运用在数组，LinkedList中，主要分为单向快慢指针和双方向双指针, LinkedList考题一般是Singly Linked List，所以通常只能用快慢指针，数组题两个技巧都能用。还有一种同向双指针，这种通常是针对input有两个数组或者LinkedList的。
 * 快慢指针有两个比较特别的应用在Leetcode里比较常见
@@ -168,23 +168,25 @@ public ListNode reverseList(ListNode head) {
   * [142. Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii)
   * [287. Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number)
 * Sliding Window
-  * [3. Longest Substring Without Repeating Characte](https://leetcode.com/problems/longest-substring-without-repeating-characters)r
-  * [30. Substring with Concatenation of All Words](https://leetcode.com/problems/substring-with-concatenation-of-all-words)
-  * [76. Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring)
-  * [159. Longest Substring with At Most Two Distinct Characters](https://leetcode.com/problems/longest-substring-with-at-most-two-distinct-characters)
-  * [209. Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum)
-  * [239. Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum)
-  * [340. Longest Substring with At Most K Distinct Characters](https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters)
-  * [424. Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement)
-  * [438. Find All Anagrams in a String](https://leetcode.com/problems/find-all-anagrams-in-a-string)
-  * [480. Sliding Window Median](https://leetcode.com/problems/sliding-window-median)
-  * [487. Max Consecutive Ones II](https://leetcode.com/problems/max-consecutive-ones-ii)
-  * [567. Permutation in String](https://leetcode.com/problems/permutation-in-string)
+  * 寻找最小窗口
+    * [76. Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring)
+    * [209. Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum)
+    * [727. Minimum Window Subsequence](https://leetcode.com/problems/minimum-window-subsequence)
+    * [862. Shortest Subarray with Sum at Least K](https://leetcode.com/problems/shortest-subarray-with-sum-at-least-k)
+  * 寻找最大窗口
+    * [3. Longest Substring Without Repeating Characte](https://leetcode.com/problems/longest-substring-without-repeating-characters)r
+    * [159. Longest Substring with At Most Two Distinct Characters](https://leetcode.com/problems/longest-substring-with-at-most-two-distinct-characters)
+    * [340. Longest Substring with At Most K Distinct Characters](https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters)
+    * [424. Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement)
+    * [487. Max Consecutive Ones II](https://leetcode.com/problems/max-consecutive-ones-ii)
+    * [1004. Max Consecutive Ones III](https://leetcode.com/problems/max-consecutive-ones-iii)
+  * 寻找所有窗口
+    * [30. Substring with Concatenation of All Words](https://leetcode.com/problems/substring-with-concatenation-of-all-words)
+    * [438. Find All Anagrams in a String](https://leetcode.com/problems/find-all-anagrams-in-a-string)
+    * [567. Permutation in String](https://leetcode.com/problems/permutation-in-string)
+    * [992. Subarrays with K Different Integers](https://leetcode.com/problems/subarrays-with-k-different-integers)
+  * 寻找窗口个数
   * [713. Subarray Product Less Than K](https://leetcode.com/problems/subarray-product-less-than-k)
-  * [727. Minimum Window Subsequence](https://leetcode.com/problems/minimum-window-subsequence)
-  * [862. Shortest Subarray with Sum at Least K](https://leetcode.com/problems/shortest-subarray-with-sum-at-least-k)
-  * [992. Subarrays with K Different Integers](https://leetcode.com/problems/subarrays-with-k-different-integers)
-  * [1004. Max Consecutive Ones III](https://leetcode.com/problems/max-consecutive-ones-iii)
 
 #### 双方向双指针
 
