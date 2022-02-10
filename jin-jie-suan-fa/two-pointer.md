@@ -2,7 +2,7 @@
 
 ### 基本思路
 
-* 这个技巧常运用在数组，LinkedList中，主要分为单向快慢指针和双方向双指针, LinkedList考题一般是Singly Linked List，所以通常只能用快慢指针，数组题两个技巧都能用。还有一种同向双指针，这种通常是针对input有两个数组或者LinkedList的。
+* 这个技巧常运用在数组，LinkedList中，主要分为单向快慢指针和反向面对面双指针, LinkedList考题一般是Singly Linked List，所以通常只能用快慢指针，数组题两个技巧都能用。还有一种同向双指针，这种通常是针对input有两个数组或者LinkedList的。
 * 快慢指针有两个比较特别的应用在Leetcode里比较常见
   * Floyd's Cycle Detection
     * 思路是利用快慢指针龟兔赛跑，如果有环，快指针总能追上慢指针
@@ -250,7 +250,7 @@ public ListNode reverseList(ListNode head) {
     * [438. Find All Anagrams in a String](https://leetcode.com/problems/find-all-anagrams-in-a-string)
     * [480. Sliding Window Median](https://leetcode.com/problems/sliding-window-median)
 
-#### 双方向双指针
+#### 反向面对面双指针
 
 * [15. 3Sum](https://leetcode.com/problems/3sum)
 * [16. 3Sum Closest](https://leetcode.com/problems/3sum-closest)
