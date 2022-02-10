@@ -245,6 +245,7 @@ public ListNode reverseList(ListNode head) {
     * [1248. Count Number of Nice Subarrays](https://leetcode.com/problems/count-number-of-nice-subarrays)
   * 固定大小窗口题
     * [30. Substring with Concatenation of All Words](https://leetcode.com/problems/substring-with-concatenation-of-all-words)
+    * [187. Repeated DNA Sequences](https://leetcode.com/problems/repeated-dna-sequences)
     * [239. Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum)
     * [438. Find All Anagrams in a String](https://leetcode.com/problems/find-all-anagrams-in-a-string)
     * [480. Sliding Window Median](https://leetcode.com/problems/sliding-window-median)
