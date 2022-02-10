@@ -238,7 +238,6 @@ public ListNode reverseList(ListNode head) {
     * [30. Substring with Concatenation of All Words](https://leetcode.com/problems/substring-with-concatenation-of-all-words)
     * [187. Repeated DNA Sequences](https://leetcode.com/problems/repeated-dna-sequences)
     * [438. Find All Anagrams in a String](https://leetcode.com/problems/find-all-anagrams-in-a-string)
-    * [567. Permutation in String](https://leetcode.com/problems/permutation-in-string)
   * 寻找窗口个数
     * [713. Subarray Product Less Than K](https://leetcode.com/problems/subarray-product-less-than-k)
     * [930. Binary Subarrays With Sum](https://leetcode.com/problems/binary-subarrays-with-sum)
