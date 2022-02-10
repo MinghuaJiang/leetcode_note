@@ -1,6 +1,6 @@
 # Two Pointer
 
-### 最大基本思路
+### 基本思路
 
 * 这个技巧常运用在数组，LinkedList中，主要分为单向快慢指针和双方向双指针, LinkedList考题一般是Singly Linked List，所以通常只能用快慢指针，数组题两个技巧都能用。还有一种同向双指针，这种通常是针对input有两个数组或者LinkedList的。
 * 快慢指针有两个比较特别的应用在Leetcode里比较常见
@@ -244,6 +244,11 @@ public ListNode reverseList(ListNode head) {
     * [930. Binary Subarrays With Sum](https://leetcode.com/problems/binary-subarrays-with-sum)
     * [992. Subarrays with K Different Integers](https://leetcode.com/problems/subarrays-with-k-different-integers)
     * [1248. Count Number of Nice Subarrays](https://leetcode.com/problems/count-number-of-nice-subarrays)
+  * 固定大小窗口题
+    * [30. Substring with Concatenation of All Words](https://leetcode.com/problems/substring-with-concatenation-of-all-words)
+    * [239. Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum)
+    * [438. Find All Anagrams in a String](https://leetcode.com/problems/find-all-anagrams-in-a-string)
+    * [480. Sliding Window Median](https://leetcode.com/problems/sliding-window-median)
 
 #### 双方向双指针
 
