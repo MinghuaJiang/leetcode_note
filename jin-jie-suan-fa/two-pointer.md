@@ -9,7 +9,7 @@
     * 如果要定位cycle的交叉点，那么做法是找到快慢指针的相遇点，把其中一个指针放到起点，然后两个指针同时从相遇点和起点一起往前走，那么下一个相遇的点就是这个交叉点。
   * Sliding Window
     * 这一类题属于快慢双指针,  用来避免重复计算，达到O(N)的时间复杂度，有时会有和hash或者单调queue的结合，通常有四种类型
-      * 求满足条件的最小窗口，这里对条件没有限制，一旦满足条件就开始缩小窗口
+      * 求满足条件的最小窗口，一般是二分的情况，初始的窗口不满足条件，随着窗口的扩大会遇到满足条件的点，因为是算最小值，所以这时候接下去就开始缩小窗口，直到条件又不满足，所以每次缩小窗口的时候就更新下最小值。
       * ```
         public int slidngwindow(String s) {
             int left = 0;
@@ -49,7 +49,7 @@
             return minLength;
         }
         ```
-      * 求满足条件的最大窗口，这里的条件通常是二分的，一般是考at most something，换言之就是在某个pivot point的左边是满足条件的，右边是不满足条件的。
+      * 求满足条件的最大窗口，这里的条件通常也是二分的，一般是考at most something，换言之就是初始窗口是满足条件的，扩大到了某个窗口开始不满足条件，然后需要缩小窗口，直到重新满足条件，因为是算最大值，所以这里每次窗口的扩大都更新下最大值
       * ```
         public int slidngwindow(String s) {
             int left = 0;
@@ -93,7 +93,7 @@
         }
         ```
       * 求满足条件的窗口个数
-        * 二分条件比较容易，如果遇到三分的那种，例如等于某个target，也就是说更小或者更大的窗口都是不满足条件的，这里一种做法是把这题转换成二分的，计算满足小于等于target的窗口个数 - 满足小于等于target - 1的窗口个数， 然后做法就和计算最大窗口类似了。
+        * 可以考一上来满足条件，到了某个点就不满足条件了，这种题类似于上面最长窗口的解法，另一种是一上来不满足条件，到了某个窗口开始满足条件，窗口继续扩大还可以满足条件，然后继续扩大又不满足条件了，类似于三分的scenario，比如计算subarray的sum满足某个target，然后subarray可以包含0, 这里一种做法是把这题转换成二分的，计算满足小于等于target的窗口个数 - 满足小于等于target - 1的窗口个数， 然后做法就和计算最大窗口类似了。
         * ```
           public int slidingwinowThreeWayPartition(int[] nums, int k) {
               return this.slidingwinowTwoWayPartition(nums, k) - this.slidingwinowTwoWayPartition(nums, k - 1);
@@ -121,6 +121,30 @@
           }
           ```
         * 求满足条件的所有窗口
+          * 一般会考一上来不满足条件，之后会满足条件的窗口题，而且通常会考固定大小窗口题，这样窗口大小到了固定窗口就可以开始缩小。类似于计算最小窗口题的写法。
+          * ```
+            public List<Integer> slidingwindow(String s, String p) {
+                List<Integer> result = new ArrayList<>();
+                int left = 0;
+                int right = 0;
+
+                while (right < s.length()){
+                    // 如果窗口满足某个固定大小，开始缩小窗口
+                    if (right - left + 1 == p.length()){
+                        if (满足某个条件) {
+                            result.add(left);
+                        }
+
+                        left++;
+                    }
+
+                    right++;
+                }
+
+                return result;
+            }
+            ```
+      * 窗口题还有另外一种维度的划分就是分为固定大小窗口，和可变窗口大小题&#x20;
 
 ### 常见Leetcode题型
 
