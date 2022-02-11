@@ -2,7 +2,7 @@
 
 * 这个算法也被称为Rabin Karp算法。是用来快速做string search的算法
   * [https://en.wikipedia.org/wiki/Rabin%E2%80%93Karp\_algorithm](https://en.wikipedia.org/wiki/Rabin%E2%80%93Karp\_algorithm)
-* 基于Sliding Window的一种特殊技巧，本质上是在窗口到达要求大小时，把两个要比较的窗口序列先做hash，如果hash不匹配，就快速排除，更新窗口，只有当hash匹配，再去一个一个比较具体的值。思想有点类似Bloom Filter
+* 基于Sliding Window的一种特殊技巧，用于优化sliding window里，需要每次做sequence equal才能判断是否满足条件的题, 原本的复杂度是O(N \* L),这里本质上是在窗口到达要求大小时，把两个要比较的窗口序列先做hash，一种情况是，如果hash不匹配，就快速排除，更新窗口，只有当hash匹配，再去读取或者比较具体的窗口值，思想有点类似Bloom Filter。所以Average的复杂度可以降到O(N)
   * [187. Repeated DNA Sequences](https://leetcode.com/problems/repeated-dna-sequences)
   * [214. Shortest Palindrome](https://leetcode.com/problems/shortest-palindrome)
   * [718. Maximum Length of Repeated Subarray](https://leetcode.com/problems/maximum-length-of-repeated-subarray)
