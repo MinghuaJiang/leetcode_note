@@ -234,6 +234,7 @@ public ListNode reverseList(ListNode head) {
     * [718. Maximum Length of Repeated Subarray](https://leetcode.com/problems/maximum-length-of-repeated-subarray)
     * [978. Longest Turbulent Subarray](https://leetcode.com/problems/longest-turbulent-subarray)
     * [1004. Max Consecutive Ones III](https://leetcode.com/problems/max-consecutive-ones-iii)
+    * [1438. Longest Continuous Subarray With Absolute Diff Less Than or Equal to Limit](two-pointer.md#ji-ben-si-lu)
   * 寻找所有窗口
     * [30. Substring with Concatenation of All Words](https://leetcode.com/problems/substring-with-concatenation-of-all-words)
     * [187. Repeated DNA Sequences](https://leetcode.com/problems/repeated-dna-sequences)
@@ -245,7 +246,6 @@ public ListNode reverseList(ListNode head) {
     * [1248. Count Number of Nice Subarrays](https://leetcode.com/problems/count-number-of-nice-subarrays)
   * 固定大小窗口题
     * [30. Substring with Concatenation of All Words](https://leetcode.com/problems/substring-with-concatenation-of-all-words)
-    * [187. Repeated DNA Sequences](https://leetcode.com/problems/repeated-dna-sequences)
     * [239. Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum)
     * [438. Find All Anagrams in a String](https://leetcode.com/problems/find-all-anagrams-in-a-string)
     * [480. Sliding Window Median](https://leetcode.com/problems/sliding-window-median)
