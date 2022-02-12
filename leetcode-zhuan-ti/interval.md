@@ -13,7 +13,6 @@
   * [56. Merge Intervals](https://leetcode.com/problems/merge-intervals)
   * [57. Insert Interval](https://leetcode.com/problems/insert-interval)
   * [252. Meeting Rooms](https://leetcode.com/problems/meeting-rooms)
-  * [296. Best Meeting Point](https://leetcode.com/problems/best-meeting-point)
   * [1272. Remove Interval](https://leetcode.com/problems/remove-interval)
   * [1288. Remove Covered Intervals](https://leetcode.com/problems/remove-covered-intervals)
 * Binary Search
