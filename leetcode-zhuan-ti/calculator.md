@@ -9,5 +9,5 @@
   * [770. Basic Calculator IV](https://leetcode.com/problems/basic-calculator-iv)
   * [772. Basic Calculator III](https://leetcode.com/problems/basic-calculator-iii)
   * [1106. Parsing A Boolean Expression](https://leetcode.com/problems/parsing-a-boolean-expression)
-  * [1597. Build Binary Expression Tree From Infix E](https://leetcode.com/problems/build-binary-expression-tree-from-infix-expression)pression
+  * [1597. Build Binary Expression Tree From Infix Expression](https://leetcode.com/problems/build-binary-expression-tree-from-infix-expression)
   * [1628. Design an Expression Tree With Evaluate Function](https://leetcode.com/problems/design-an-expression-tree-with-evaluate-function)
