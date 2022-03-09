@@ -17,8 +17,6 @@
 * [862. Shortest Subarray with Sum at Least K](https://leetcode.com/problems/shortest-subarray-with-sum-at-least-k)
 * [930. Binary Subarrays With Sum](https://leetcode.com/problems/binary-subarrays-with-sum)
 * [974. Subarray Sums Divisible by K](https://leetcode.com/problems/subarray-sums-divisible-by-k)
-* [1004. Max Consecutive Ones III](https://leetcode.com/problems/max-consecutive-ones-iii)
-* [1094. Car Pooling](https://leetcode.com/problems/car-pooling)
 
 ###
 
