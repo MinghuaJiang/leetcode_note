@@ -5,6 +5,7 @@
 * 这个算法也被称为Rabin Karp算法。是用来快速做string search的算法
   * [https://en.wikipedia.org/wiki/Rabin%E2%80%93Karp\_algorithm](https://en.wikipedia.org/wiki/Rabin%E2%80%93Karp\_algorithm)
 * 基于Sliding Window的一种特殊技巧，用于优化sliding window里，需要每次做sequence equal才能判断是否满足条件的题, 原本的复杂度是O(N \* L),这里本质上是在窗口到达要求大小时，把两个要比较的窗口序列先做hash，一种情况是，如果hash不匹配，就快速排除，更新窗口，只有当hash匹配，再去读取或者比较具体的窗口值，思想有点类似Bloom Filter。所以average的复杂度可以降到O(N)， 也可以用在Binary Search上
+* 对于固定窗口大小的sliding window题比如lc 187, 可以才有base-N number来做hash，这样的hash和原序列可以保证一一对应，但是如果是不固定的窗口，高位是0的情况会产生conclict的hash，就hash如果match还需要一个一个判断，或者让这个hash从1开始而不是从0开始。
 
 ### Leetcode常见题
 
