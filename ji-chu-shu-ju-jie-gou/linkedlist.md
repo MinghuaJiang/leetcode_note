@@ -50,6 +50,10 @@ public class SinglyLinkedList {
     }
 
     public void removeLast(){
+        if (this.isEmpty()){
+            throw new IllegalStateException();
+        }
+        
         ListNode curr = this.head;
         ListNode prev = null;
         while(curr.next != null){
@@ -67,6 +71,10 @@ public class SinglyLinkedList {
     }
 
     public void removeFirst(){
+        if (this.isEmpty()){
+            throw new IllegalStateException();
+        }
+        
         this.head = this.head.next;
         this.size--;
     }
@@ -115,6 +123,104 @@ public class SinglyLinkedList {
         sb.append("]");
         return sb.toString();
     }
+}
 ```
 {% endcode %}
 
+{% code title="DoublyLinkedList.java" %}
+```java
+class DoublyListNode{
+    public int val;
+    public DoublyListNode prev;
+    public DoublyListNode next;
+    public DoublyListNode(int val){
+        this.val = val;
+    }
+    public DoublyListNode(int val, DoublyListNode prev, DoublyListNode next){
+        this.val = val;
+        this.prev = prev;
+        this.next = next;
+    }
+}
+
+public class DoublyLinkedList {
+    private DoublyListNode head;
+    private DoublyListNode tail;
+    private int size;
+
+    public DoublyLinkedList(){
+        this.head = new DoublyListNode(-1);
+        this.tail = new DoublyListNode(-1);
+        this.head.next = tail;
+        this.tail.prev = head;
+    }
+
+    public void insertLast(int val){
+        DoublyListNode tmp = new DoublyListNode(val, this.tail.prev, this.tail);
+        this.tail.prev.next = tmp;
+        this.tail.prev = tmp;
+        this.size++;
+    }
+
+    public void insertFirst(int val){
+        DoublyListNode tmp = new DoublyListNode(val, this.head, this.head.next);
+        this.head.next.prev = tmp;
+        this.head.next = tmp;
+        this.size++;
+    }
+
+    public void removeFirst(){
+        if (this.isEmpty()){
+            throw new IllegalStateException();
+        }
+
+        this.head.next.next.prev = this.head;
+        this.head.next = this.head.next.next;
+    }
+
+    public void removeLast(){
+        if (this.isEmpty()){
+            throw new IllegalStateException();
+        }
+
+        this.tail.prev.prev.next = this.tail;
+        this.tail.prev = this.tail.prev.prev;
+    }
+
+    public int getSize(){
+        return size;
+    }
+
+    public boolean isEmpty(){
+        return this.head.next == this.tail;
+    }
+
+    public String toString(){
+        StringBuilder sb = new StringBuilder();
+        DoublyListNode curr = this.head.next;
+        sb.append("[");
+        while (curr != tail){
+            sb.append(curr.val);
+            sb.append(",");
+            curr = curr.next;
+        }
+
+        sb.deleteCharAt(sb.lastIndexOf(","));
+        sb.append("]");
+        return sb.toString();
+    }
+
+    public static void main(String[] args) {
+        DoublyLinkedList list = new DoublyLinkedList();
+        list.insertLast(1);
+        list.insertFirst(0);
+        list.insertLast(4);
+        list.insertLast(5);
+        list.removeLast();
+        list.removeFirst();
+        System.out.println(list);
+        System.out.println(list.getSize());
+    }
+}
+```
+{% endcode %}
