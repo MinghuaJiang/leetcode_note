@@ -10,14 +10,13 @@
   hash = hash * PRIME + B[j];
   hash = hash - B[i] * (long) Math.pow(PRIME, window size);
   ```
-* 这里的prime也可以用每一位对应的number代替，尤其对于固定窗口大小的sliding window题比如lc 187, 可以用base-N number来做Hash而不需要用到prime，这样的hash和原序列可以保证一一对应，但是如果是不固定的窗口，高位是0的情况会产生conclict的hash，所以这种情况下，要么这个数字只能从1开始，要么就是用prime，如果是prime的话，一般可以这样生成hash。
-*
-
-    ```
-    hash = hash * PRIME + text.charAt(j);
-    hash = hash * PRIME + text.charAt(j) - 'a' + 1;
-    hash = hash * PRIME + text.charAt(j) - 'a';
-    ```
+* 这里有几个问题，hash一上来是0，所以如果高位每一位都是0的话，那么就会产生歧义，除非窗口大小是固定的，比如lc 187，或者就把每一位 + 1让它不可能是0。&#x20;
+* ```
+  hash = hash * PRIME + text.charAt(j);
+  hash = hash * PRIME + text.charAt(j) - 'a' + 1;
+  ```
+* 第二个问题是，hash的计算会导致overflow
+* 第三个问题是，hash可能会变成负数
 
 ### Leetcode常见题
 
