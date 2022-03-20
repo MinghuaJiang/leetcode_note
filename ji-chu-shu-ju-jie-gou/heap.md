@@ -6,6 +6,87 @@
   * 包括Heapify来初始化堆
   * 插入一个元素
   * 删除堆的顶部
+
+```java
+public class Heap {
+    private int[] array;
+    private int size;
+    public Heap(int[] input){
+        this.array = new int[input.length * 2];
+        for (int i = 0;i < input.length; i++){
+            this.array[i] = input[i];
+        }
+
+        this.size = input.length;
+        this.heapify();
+    }
+
+    // 从最后一个node的parent开始做siftDown
+    private void heapify(){
+        for (int i = (size - 2) / 2; i >= 0; i--){
+            this.siftDown(i);
+        }
+    }
+
+    public void insert(int val){
+        this.array[size] = val;
+        this.siftUp(size);
+        this.size++;
+    }
+
+    public int removeMin(){
+        int result = this.array[0];
+        this.array[0] = this.array[size - 1];
+        this.array[size - 1] = 0;
+        this.size--;
+        this.siftDown(0);
+        return result;
+    }
+
+    public int getSize(){
+        return this.size;
+    }
+
+    // 这里不需要一个一个交换，而是可以shift
+    private void siftUp(int index){
+        int temp = this.array[index];
+        int parent = (index - 1) / 2;
+        while (parent >= 0){
+            if (array[parent] <= array[index]){
+                break;
+            }
+
+            array[index] = array[parent];
+            index = parent;
+            parent = (index - 1) / 2;
+        }
+
+        array[index] = temp;
+    }
+
+    // 这里不需要一个一个交换，而是可以shift
+    private void siftDown(int index){
+        int temp = this.array[index];
+        int childIndex = 2 * index + 1;
+        while (childIndex < this.size){
+            if (childIndex + 1 < this.size && array[childIndex + 1] < array[childIndex]){
+                childIndex++;
+            }
+
+            if (temp <= array[childIndex]){
+                break;
+            }
+
+            this.array[index] = array[childIndex];
+            index = childIndex;
+            childIndex = 2 * index + 1;
+        }
+
+        this.array[index] = temp;
+    }
+}
+```
+
 * Heap通常有以下几个实用场景
   * 排序
     * Heap Sort
