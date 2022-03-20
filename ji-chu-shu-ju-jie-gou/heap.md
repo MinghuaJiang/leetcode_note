@@ -3,7 +3,7 @@
 * Heap是一棵root小于或者大于任何children的完整二叉树，通常基于array来实现，分为最大堆和最小堆。
 * 插入一个元素和删除top都是o(logn), 初始化构建一个堆是O(n)， 对于每一个heap中的元素with index i，他的left child和right child分别对应2 \* i + 1. 2 \* i + 2， 反过来它的parent是 (i - 1) / 2;
 * 下面是一个Heap的实现代码
-  * 包括Heapify来初始化堆
+  * Heapify来初始化堆
   * 插入一个元素
   * 删除堆的顶部
 
@@ -28,12 +28,15 @@ public class Heap {
         }
     }
 
+    // 每次插入一个元素，需要做siftUp
     public void insert(int val){
         this.array[size] = val;
         this.siftUp(size);
         this.size++;
     }
 
+    // 每次删除一个元素，把顶部元素和最后一个元素做交换，删除最后一个元素，然后把顶部元素做
+    // siftDown
     public int removeMin(){
         int result = this.array[0];
         this.array[0] = this.array[size - 1];
