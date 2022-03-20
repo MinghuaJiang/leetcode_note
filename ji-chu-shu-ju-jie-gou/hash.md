@@ -33,7 +33,6 @@ Hash主要可以应用在以下场景
   * [609. Find Duplicate File in System](https://leetcode.com/problems/find-duplicate-file-in-system)
   * [621. Task Scheduler](https://leetcode.com/problems/task-scheduler)
   * [635. Design Log Storage System](https://leetcode.com/problems/design-log-storage-system)
-  *
 * Sparse Data Structure
   * [311. Sparse Matrix Multiplication](https://leetcode.com/problems/sparse-matrix-multiplication)
   * [582. Kill Process](https://leetcode.com/problems/kill-process)
