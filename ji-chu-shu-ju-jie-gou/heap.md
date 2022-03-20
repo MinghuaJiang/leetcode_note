@@ -104,4 +104,8 @@ public class Heap {
     * [480. Sliding Window Median](https://leetcode.com/problems/sliding-window-median)
   * 计算top K
     * [23. Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists)
+    * [347. Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements)
+    * [358. Rearrange String k Distance Apart](https://leetcode.com/problems/rearrange-string-k-distance-apart)
     * [373. Find K Pairs with Smallest Sums](https://leetcode.com/problems/find-k-pairs-with-smallest-sums)
+    * [658. Find K Closest Elements](https://leetcode.com/problems/find-k-closest-elements)
+    * [973. K Closest Points to Origin](https://leetcode.com/problems/k-closest-points-to-origin)
