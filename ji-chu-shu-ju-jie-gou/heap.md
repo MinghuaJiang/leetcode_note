@@ -94,6 +94,7 @@ public class Heap {
 * Heap通常有以下几个实用场景
   * 排序
     * Heap Sort
+      * Sort相关的题一般倒是不需要去特意去用Heap, 因为直接用built-in的sort就好了。
   * 计算top K
     * O(nlogk)
     * 可以每个元素都往堆里丢，然后一旦堆大小大于k,就remove top，这样每一个元素都要至少add一次
