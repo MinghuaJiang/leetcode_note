@@ -97,7 +97,25 @@ public class Heap {
   * 计算top K
     * O(nlogk)
     * 可以每个元素都往堆里丢，然后一旦堆大小大于k,就remove top，这样每一个元素都要至少add一次
+    * ```
+      for (int n: ...) {
+         pq.offer(n);
+         if (pq.size() > k){
+             pq.poll();
+         }
+      }
+      ```
     * 也可以把头k个元素放入堆里，然后维持堆里的元素是top k的，对于不满足的元素通过和堆顶比较就可以排除
+    * ```
+      for (int n: ...) {
+          if (pq.size() < k) {
+              pq.offer(n);
+          }else if (n > pq.peek()) {
+              pq.offer(n);
+              pq.poll();
+          }
+      }
+      ```
   * median相关问题
     * 需要同时用到min-max heap，然后维持数量相同的大小heap，这样要么多一个元素的堆的顶是中位数，要么两个堆顶的元素相加除以2是中位数
 * Heap相关的Leetcode
