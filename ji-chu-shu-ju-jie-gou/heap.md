@@ -127,5 +127,8 @@ public class Heap {
     * [347. Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements)
     * [358. Rearrange String k Distance Apart](https://leetcode.com/problems/rearrange-string-k-distance-apart)
     * [373. Find K Pairs with Smallest Sums](https://leetcode.com/problems/find-k-pairs-with-smallest-sums)
+    * [378. Kth Smallest Element in a Sorted Matrix](https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix)
     * [658. Find K Closest Elements](https://leetcode.com/problems/find-k-closest-elements)
+    * [719. Find K-th Smallest Pair Distance](https://leetcode.com/problems/find-k-th-smallest-pair-distance)
     * [973. K Closest Points to Origin](https://leetcode.com/problems/k-closest-points-to-origin)
+    * [2040. Kth Smallest Product of Two Sorted Arrays](https://leetcode.com/problems/kth-smallest-product-of-two-sorted-arrays)
