@@ -132,4 +132,3 @@ public class Heap {
     * [658. Find K Closest Elements](https://leetcode.com/problems/find-k-closest-elements)
     * [719. Find K-th Smallest Pair Distance](https://leetcode.com/problems/find-k-th-smallest-pair-distance)
     * [973. K Closest Points to Origin](https://leetcode.com/problems/k-closest-points-to-origin)
-    * [2040. Kth Smallest Product of Two Sorted Arrays](https://leetcode.com/problems/kth-smallest-product-of-two-sorted-arrays)
