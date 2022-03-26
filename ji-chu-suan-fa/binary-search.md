@@ -143,3 +143,5 @@ private int searchLast(int[] nums, int target){
   * 倍乘法
     * 需要通过倍乘的方式先找到二分搜索范围，再进行二分搜索
       * [69. Sqrt(x)](https://leetcode.com/problems/sqrtx) (可以是找唯一解，也可以是找最后一个满足条件的）
+  * 在Sort过的数组里找第k个满足条件的元素
+    * 可以按照min和max的value区间做search。找到某个区间正好有k个元素的。
