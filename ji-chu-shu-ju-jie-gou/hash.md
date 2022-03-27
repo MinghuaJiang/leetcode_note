@@ -12,11 +12,9 @@ Hash主要可以应用在以下场景
   * [133. Clone Graph](https://leetcode.com/problems/clone-graph)
   * [535. Encode and Decode TinyURL](https://leetcode.com/problems/encode-and-decode-tinyurl)
 * Visited Set
-  * [73. Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes)
   * [202. Happy Number](https://leetcode.com/problems/happy-number)
   * [205. Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings)
   * [217. Contains Duplicate](https://leetcode.com/problems/contains-duplicate)
-  * [219. Contains Duplicate II](https://leetcode.com/problems/contains-duplicate-ii)
   * [264. Ugly Number II](https://leetcode.com/problems/ugly-number-ii)
   * [299. Bulls and Cows](https://leetcode.com/problems/bulls-and-cows)
   * [313. Super Ugly Number](https://leetcode.com/problems/super-ugly-number)
@@ -28,6 +26,7 @@ Hash主要可以应用在以下场景
   * [621. Task Scheduler](https://leetcode.com/problems/task-scheduler)
 * Use Array as Hash
   * [41. First Missing Positive](https://leetcode.com/problems/first-missing-positive)
+  * [73. Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes)
   * [268. Missing Number](https://leetcode.com/problems/missing-number)
   * [287. Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number)
 * Data Structure Design
@@ -46,3 +45,4 @@ Hash主要可以应用在以下场景
 * Implement Tree-Like Structure
   * [208. Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree)
 * Sliding Window
+  * [219. Contains Duplicate II](https://leetcode.com/problems/contains-duplicate-ii)
