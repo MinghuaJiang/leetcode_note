@@ -26,7 +26,7 @@ Hash主要可以应用在以下场景
   * [442. Find All Duplicates in an Array](https://leetcode.com/problems/find-all-duplicates-in-an-array)
   * [609. Find Duplicate File in System](https://leetcode.com/problems/find-duplicate-file-in-system)
   * [621. Task Scheduler](https://leetcode.com/problems/task-scheduler)
-* Counting Style Hash
+* Use Array as Hash
   * [41. First Missing Positive](https://leetcode.com/problems/first-missing-positive)
   * [268. Missing Number](https://leetcode.com/problems/missing-number)
   * [287. Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number)
