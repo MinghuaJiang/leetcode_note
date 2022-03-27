@@ -16,6 +16,7 @@ Hash主要可以应用在以下场景
   * [205. Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings)
   * [217. Contains Duplicate](https://leetcode.com/problems/contains-duplicate)
   * [264. Ugly Number II](https://leetcode.com/problems/ugly-number-ii)
+  * [268. Missing Number](https://leetcode.com/problems/missing-number)
   * [299. Bulls and Cows](https://leetcode.com/problems/bulls-and-cows)
   * [313. Super Ugly Number](https://leetcode.com/problems/super-ugly-number)
   * [387. First Unique Character in a String](https://leetcode.com/problems/first-unique-character-in-a-string)
@@ -27,7 +28,6 @@ Hash主要可以应用在以下场景
 * Use Array as Hash
   * [41. First Missing Positive](https://leetcode.com/problems/first-missing-positive)
   * [73. Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes)
-  * [268. Missing Number](https://leetcode.com/problems/missing-number)
   * [287. Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number)
 * Data Structure Design
   * [359. Logger Rate Limiter](https://leetcode.com/problems/logger-rate-limiter)
