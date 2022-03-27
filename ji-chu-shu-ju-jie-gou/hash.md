@@ -10,10 +10,10 @@ Hash主要可以应用在以下场景
   * [12. Integer to Roman](https://leetcode.com/problems/integer-to-roman)
   * [13. Roman to Integer](https://leetcode.com/problems/roman-to-integer)
   * [133. Clone Graph](https://leetcode.com/problems/clone-graph)
+  * [205. Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings)
   * [535. Encode and Decode TinyURL](https://leetcode.com/problems/encode-and-decode-tinyurl)
 * Visited Set
   * [202. Happy Number](https://leetcode.com/problems/happy-number)
-  * [205. Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings)
   * [217. Contains Duplicate](https://leetcode.com/problems/contains-duplicate)
   * [264. Ugly Number II](https://leetcode.com/problems/ugly-number-ii)
   * [268. Missing Number](https://leetcode.com/problems/missing-number)
