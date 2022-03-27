@@ -15,10 +15,8 @@ Hash主要可以应用在以下场景
 * Visited Set
   * [202. Happy Number](https://leetcode.com/problems/happy-number)
   * [217. Contains Duplicate](https://leetcode.com/problems/contains-duplicate)
-  * [264. Ugly Number II](https://leetcode.com/problems/ugly-number-ii)
   * [268. Missing Number](https://leetcode.com/problems/missing-number)
   * [299. Bulls and Cows](https://leetcode.com/problems/bulls-and-cows)
-  * [313. Super Ugly Number](https://leetcode.com/problems/super-ugly-number)
   * [387. First Unique Character in a String](https://leetcode.com/problems/first-unique-character-in-a-string)
   * [423. Reconstruct Original Digits from English](https://leetcode.com/problems/reconstruct-original-digits-from-english)
   * [454. 4Sum II](https://leetcode.com/problems/4sum-ii)
