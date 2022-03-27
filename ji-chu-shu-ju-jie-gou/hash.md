@@ -22,13 +22,13 @@ Hash主要可以应用在以下场景
   * [387. First Unique Character in a String](https://leetcode.com/problems/first-unique-character-in-a-string)
   * [423. Reconstruct Original Digits from English](https://leetcode.com/problems/reconstruct-original-digits-from-english)
   * [454. 4Sum II](https://leetcode.com/problems/4sum-ii)
-  * [442. Find All Duplicates in an Array](https://leetcode.com/problems/find-all-duplicates-in-an-array)
   * [609. Find Duplicate File in System](https://leetcode.com/problems/find-duplicate-file-in-system)
   * [621. Task Scheduler](https://leetcode.com/problems/task-scheduler)
 * Use Array as Hash
   * [41. First Missing Positive](https://leetcode.com/problems/first-missing-positive)
   * [73. Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes)
   * [287. Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number)
+  * [442. Find All Duplicates in an Array](https://leetcode.com/problems/find-all-duplicates-in-an-array)
 * Data Structure Design
   * [359. Logger Rate Limiter](https://leetcode.com/problems/logger-rate-limiter)
   * [362. Design Hit Counter](https://leetcode.com/problems/design-hit-counter)
