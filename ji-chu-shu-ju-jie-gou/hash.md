@@ -13,7 +13,6 @@ Hash主要可以应用在以下场景
   * [205. Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings)
   * [535. Encode and Decode TinyURL](https://leetcode.com/problems/encode-and-decode-tinyurl)
 * Visited Set
-  * [202. Happy Number](https://leetcode.com/problems/happy-number)
   * [217. Contains Duplicate](https://leetcode.com/problems/contains-duplicate)
   * [268. Missing Number](https://leetcode.com/problems/missing-number)
   * [299. Bulls and Cows](https://leetcode.com/problems/bulls-and-cows)
