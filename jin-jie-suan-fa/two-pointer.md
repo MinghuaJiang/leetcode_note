@@ -217,6 +217,7 @@ public ListNode reverseList(ListNode head) {
 * Floyd's Cycle Detection
   * [141. Linked List Cycle](https://leetcode.com/problems/linked-list-cycle)
   * [142. Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii)
+  * [202. Happy Number](https://leetcode.com/problems/happy-number)
   * [287. Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number)
 * Sliding Window
   * 寻找最小窗口
