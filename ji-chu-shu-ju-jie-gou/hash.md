@@ -37,6 +37,7 @@ Hash主要可以应用在以下场景
   * [811. Subdomain Visit Count](https://leetcode.com/problems/subdomain-visit-count)
 * Sparse Data Structure
   * [311. Sparse Matrix Multiplication](https://leetcode.com/problems/sparse-matrix-multiplication)
+  * [1570. Dot Product of Two Sparse Vectors](https://leetcode.com/problems/dot-product-of-two-sparse-vectors)
   * [582. Kill Process](https://leetcode.com/problems/kill-process)
   * [815. Bus Routes](https://leetcode.com/problems/bus-routes)
 * Implement Tree-Like Structure
