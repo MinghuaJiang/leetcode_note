@@ -19,6 +19,7 @@ Hash主要可以应用在以下场景
   * [387. First Unique Character in a String](https://leetcode.com/problems/first-unique-character-in-a-string)
   * [423. Reconstruct Original Digits from English](https://leetcode.com/problems/reconstruct-original-digits-from-english)
   * [454. 4Sum II](https://leetcode.com/problems/4sum-ii)
+  * [582. Kill Process](https://leetcode.com/problems/kill-process)
   * [609. Find Duplicate File in System](https://leetcode.com/problems/find-duplicate-file-in-system)
   * [621. Task Scheduler](https://leetcode.com/problems/task-scheduler)
 * Use Array as Hash
@@ -38,7 +39,6 @@ Hash主要可以应用在以下场景
 * Sparse Data Structure
   * [311. Sparse Matrix Multiplication](https://leetcode.com/problems/sparse-matrix-multiplication)
   * [1570. Dot Product of Two Sparse Vectors](https://leetcode.com/problems/dot-product-of-two-sparse-vectors)
-  * [582. Kill Process](https://leetcode.com/problems/kill-process)
   * [815. Bus Routes](https://leetcode.com/problems/bus-routes)
 * Implement Tree-Like Structure
   * [208. Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree)
