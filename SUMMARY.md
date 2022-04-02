@@ -57,3 +57,4 @@
 * [Interval](leetcode-zhuan-ti/interval.md)
 * [Palindrome](leetcode-zhuan-ti/palindrome.md)
 * [Majority Element](leetcode-zhuan-ti/majority-element.md)
+* [Enumeration](leetcode-zhuan-ti/enumeration.md)
