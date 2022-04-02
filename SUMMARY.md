@@ -56,3 +56,4 @@
 * [小岛题](leetcode-zhuan-ti/xiao-dao-ti.md)
 * [Interval](leetcode-zhuan-ti/interval.md)
 * [Palindrome](leetcode-zhuan-ti/palindrome.md)
+* [Majority Element](leetcode-zhuan-ti/majority-element.md)
