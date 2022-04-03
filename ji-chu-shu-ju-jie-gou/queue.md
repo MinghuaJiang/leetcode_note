@@ -9,7 +9,6 @@
 ### LeetCode题
 
 * 数据结构Design
-  * [225. Implement Stack using Queues](https://leetcode.com/problems/implement-stack-using-queues)
   * [232. Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks)
   * [622. Design Circular Queue](https://leetcode.com/problems/design-circular-queue)
   * [641. Design Circular Deque](https://leetcode.com/problems/design-circular-deque)
