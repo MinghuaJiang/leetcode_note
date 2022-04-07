@@ -24,6 +24,7 @@
     * [257. Binary Tree Paths](https://leetcode.com/problems/binary-tree-paths)
     * [339. Nested List Weight Sum](https://leetcode.com/problems/nested-list-weight-sum)
     * [364. Nested List Weight Sum II](https://leetcode.com/problems/nested-list-weight-sum-ii)
+    * [1644. Lowest Common Ancestor of a Binary Tr](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree-ii)ee II
     * [1650. Lowest Common Ancestor of a Binary Tree III](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree-iii)
   * Level Order Traversal
     * [102. Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal)
@@ -36,7 +37,6 @@
     * [958. Check Completeness of a Binary Tree](https://leetcode.com/problems/check-completeness-of-a-binary-tree)
     * [987. Vertical Order Traversal of a Binary Tree](https://leetcode.com/problems/vertical-order-traversal-of-a-binary-tree)
     * [1522. Diameter of N-Ary Tree](https://leetcode.com/problems/diameter-of-n-ary-tree)
-    * [1644. Lowest Common Ancestor of a Binary Tr](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree-ii)
   * Traversal
     * [94. Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal)
     * [105. Construct Binary Tree from Preorder and Inor](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/)der Traversal
