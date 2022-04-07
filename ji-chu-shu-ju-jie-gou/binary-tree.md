@@ -30,7 +30,7 @@
     * [102. Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal)
     * [107. Binary Tree Level Order Traversal II](https://leetcode.com/problems/binary-tree-level-order-traversal-ii)
     * [116. Populating Next Right Pointers in Each Nod](https://leetcode.com/problems/populating-next-right-pointers-in-each-node)e
-    * [117. Populating Next Right Pointers in Each Node](https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii)
+    * [117. Populating Next Right Pointers in Each Node](https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii) II
     * [199. Binary Tree Right Side View](https://leetcode.com/problems/binary-tree-right-side-view)[ ](https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii)
     * [314. Binary Tree Vertical Order Traversal](https://leetcode.com/problems/binary-tree-vertical-order-traversal)
     * [543. Diameter of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree)
