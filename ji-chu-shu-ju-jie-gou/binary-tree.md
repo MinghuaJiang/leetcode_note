@@ -20,7 +20,6 @@
     * [129. Sum Root to Leaf Numbers](https://leetcode.com/problems/sum-root-to-leaf-numbers)
     * [226. Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree)
     * [236. Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree)
-    *
     * [339. Nested List Weight Sum](https://leetcode.com/problems/nested-list-weight-sum)
     * [364. Nested List Weight Sum II](https://leetcode.com/problems/nested-list-weight-sum-ii)
     * [437. Path Sum III](https://leetcode.com/problems/path-sum-iii)
