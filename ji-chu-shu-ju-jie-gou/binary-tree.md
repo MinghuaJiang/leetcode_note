@@ -1,11 +1,11 @@
 # Binary Tree
 
 * 主要考点
-  * 二叉树的三种遍历
+  * 二叉树的三种遍历 (DFS)
     * Pre-order traversal
     * In-order traversal
     * Post-order traversal
-  * 二叉树的Level Order Traversal
+  * 二叉树的Level Order Traversal (BFS)
   * Recursion
   * Serialize and Deserialize
 * Leetcode 考题
