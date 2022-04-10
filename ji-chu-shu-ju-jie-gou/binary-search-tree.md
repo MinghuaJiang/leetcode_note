@@ -15,7 +15,10 @@
   * [99. Recover Binary Search Tree](https://leetcode.com/problems/recover-binary-search-tree)
   * [173. Binary Search Tree Iterator](https://leetcode.com/problems/binary-search-tree-iterator)
   * [235. Lowest Common Ancestor of a Binary Search Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree)
+  * [333. Largest BST Subtree](https://leetcode.com/problems/largest-bst-subtree)
   * [450. Delete Node in a BST](https://leetcode.com/problems/delete-node-in-a-bst)
+  * [653. Two Sum IV - Input is a BST](https://leetcode.com/problems/two-sum-iv-input-is-a-bst)
+  * [669. Trim a Binary Search Tree](https://leetcode.com/problems/trim-a-binary-search-tree)
   * [938. Range Sum of BST](https://leetcode.com/problems/range-sum-of-bst)
   * [1382. Balance a Binary Search Tree](https://leetcode.com/problems/balance-a-binary-search-tree)
 * 找k个Number
