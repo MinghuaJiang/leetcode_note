@@ -3,10 +3,213 @@
 * 主要考点
   * 二叉树的三种遍历 (DFS)
     * Pre-order traversal
+      * DFS写法
+        * ```
+              public List<Integer> preorderTraversal(TreeNode root) {
+                  List<Integer> result = new ArrayList<>();
+                  preOrder(root, result);
+                  return result;
+              }
+
+              private void preOrder(TreeNode root, List<Integer> list){
+                  if (root == null){
+                      return;
+                  }
+
+                  list.add(root.val);
+                  preOrder(root.left, list);
+                  preOrder(root.right, list);
+              }
+          ```
+      * Iterative写法1
+        * ```
+             public List<Integer> preorderTraversalIterativeV1(TreeNode root) {
+                  List<Integer> result = new ArrayList<>();
+                  Stack<TreeNode> stack = new Stack<>();
+                  if (root == null) {
+                      return result;
+                  }
+
+                  stack.add(root);
+                  while (!stack.isEmpty()) {
+                      TreeNode node = stack.pop();
+                      result.add(node.val);
+                      if (node.right != null) {
+                          stack.add(node.right);
+                      }
+                      if (node.left != null) {
+                          stack.add(node.left);
+                      }
+                  }
+
+                  return result;
+              }
+          ```
+      * Iterative写法2
+        * ```
+              public List<Integer> preorderTraversalIterativeV2(TreeNode root) {
+                  List<Integer> res = new ArrayList<>();
+                  Stack<TreeNode> stack = new Stack<>();
+                  TreeNode curr = root;
+                  while (curr != null || !stack.isEmpty()) {
+                      while (curr != null) {
+                          res.add(curr.val);
+                          stack.push(curr);
+                          curr = curr.left;
+                      }
+
+                      curr = stack.pop();
+                      curr = curr.right;
+                  }
+
+                  return res;
+              }
+          ```
     * In-order traversal
+      * DFS写法
+        * ```
+              public List<Integer> inorderTraversal(TreeNode root) {
+                  List<Integer> result = new ArrayList<>();
+                  inOrder(root, result);
+                  return result;
+              }
+
+              private void inOrder(TreeNode root, List<Integer> list){
+                  if (root == null){
+                      return;
+                  }
+
+                  inOrder(root.left, list);
+                  list.add(root.val);
+                  inOrder(root.right, list);
+              }
+          ```
+      * Iterative写法
+        * ```
+              public List<Integer> inorderTraversalIterative(TreeNode root) {
+                  List<Integer> res = new ArrayList<>();
+                  Stack<TreeNode> stack = new Stack<>();
+                  TreeNode curr = root;
+                  while (curr != null || !stack.isEmpty()) {
+                      while (curr != null) {
+                          stack.push(curr);
+                          curr = curr.left;
+                      }
+
+                      curr = stack.pop();
+                      res.add(curr.val);
+                      curr = curr.right;
+                  }
+
+                  return res;
+              }
+          ```
     * Post-order traversal
+      * DFS写法
+        * ```
+              public List<Integer> postorderTraversal(TreeNode root) {
+                  List<Integer> result = new ArrayList<>();
+                  postOrder(root, result);
+                  return result;
+              }
+
+              private void postOrder(TreeNode root, List<Integer> list){
+                  if (root == null){
+                      return;
+                  }
+
+                  postOrder(root.left, list);
+                  postOrder(root.right, list);
+                  list.add(root.val);
+              }
+          ```
+      * Iterative写法1
+        * ```
+              // Think of post order as reverse way of root, right, left from result perspective
+              public List<Integer> postOrderTraversalIterativeV1(TreeNode root) {
+                  LinkedList<Integer> result = new LinkedList<>();
+                  Stack<TreeNode> stack = new Stack<>();
+                  if (root == null) {
+                      return result;
+                  }
+
+                  stack.add(root);
+                  while (!stack.isEmpty()) {
+                      TreeNode node = stack.pop();
+                      result.addFirst(node.val);
+                      if (node.left != null) {
+                          stack.add(node.left);
+                      }
+                      if (node.right != null) {
+                          stack.add(node.right);
+                      }
+                  }
+
+                  return result;
+              } 
+          ```
+      * Iterative写法2
+        * ```
+              public List<Integer> postOrderTraversalIterativeV2(TreeNode root) {
+                  List<Integer> result = new ArrayList<Integer>();
+                  if(root == null)
+                      return result;
+                  TreeNode prev = null;
+                  TreeNode curr = root;
+                  Stack<TreeNode> stack = new Stack();
+                  while(curr != null || !stack.empty()){
+                      while (curr != null){
+                          stack.push(curr);
+                          curr = curr.left;
+                      }
+
+                      curr = stack.peek();
+                      if(curr.right == null || curr.right == prev){
+                          result.add(curr.val);
+                          stack.pop();
+                          prev = curr;
+                          curr = null;
+                      }
+                      else {
+                          curr = curr.right;
+                      }
+                  }
+
+                  return result;
+              }
+          ```
   * 二叉树的Level Order Traversal (BFS)
+    * ```
+      public List<List<Integer>> levelOrderBottom(TreeNode root) {
+              LinkedList<List<Integer>> result = new LinkedList<>();
+              Queue<TreeNode> queue = new LinkedList<>();
+              if (root != null) {
+                  queue.offer(root);
+              }
+
+              while (!queue.isEmpty()){
+                  int size = queue.size();
+                  List<Integer> list = new ArrayList<>();
+                  for (int i = 0; i < size; i++){
+                      TreeNode curr = queue.poll();
+                      list.add(curr.val);
+                      if (curr.left != null){
+                          queue.offer(curr.left);
+                      }
+
+                      if (curr.right != null){
+                          queue.offer(curr.right);
+                      }
+                  }
+
+                  result.addFirst(list);
+              }
+
+              return result;
+          }
+      ```
   * Recursion
+    * 考点一般主要看每次递归需要返回什么内容，可能需要同时返回多个信息，然避免重复计算。
   * Serialize and Deserialize
 * Leetcode 考题
   * Recursion (基于三种order之一）
