@@ -24,16 +24,18 @@
 * 找k个Number
   * [230. Kth Smallest Element in a BST](https://leetcode.com/problems/kth-smallest-element-in-a-bst)
   * [501. Find Mode in Binary Search Tree](https://leetcode.com/problems/find-mode-in-binary-search-tree)
-  * [653. Two Sum IV - Input is a BST](https://leetcode.com/problems/two-sum-iv-input-is-a-bst)
-  * [1214. Two Sum BSTs](https://leetcode.com/problems/two-sum-bsts)
 * Inorder Traversal
   * [108. Convert Sorted Array to Binary Search Tree](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree)
   * [109. Convert Sorted List to Binary Search Tree](https://leetcode.com/problems/convert-sorted-list-to-binary-search-tree)
-  * [270. Closest Binary Search Tree Value](https://leetcode.com/problems/closest-binary-search-tree-value)
-  * [272. Closest Binary Search Tree Value II](https://leetcode.com/problems/closest-binary-search-tree-value-ii)
   * [285. Inorder Successor in BST](https://leetcode.com/problems/inorder-successor-in-bst)
   * [426. Convert Binary Search Tree to Sorted Doubly Linked List](https://leetcode.com/problems/convert-binary-search-tree-to-sorted-doubly-linked-list)
   * [510. Inorder Successor in BST II](https://leetcode.com/problems/inorder-successor-in-bst-ii)
   * [1008. Construct Binary Search Tree from Preorder ](https://leetcode.com/problems/construct-binary-search-tree-from-preorder-traversal)
+* Search in a BST
+  * [270. Closest Binary Search Tree Value](https://leetcode.com/problems/closest-binary-search-tree-value)
+  * [272. Closest Binary Search Tree Value II](https://leetcode.com/problems/closest-binary-search-tree-value-ii)
+  * [653. Two Sum IV - Input is a BST](https://leetcode.com/problems/two-sum-iv-input-is-a-bst)
+  * [700. Search in a Binary Search Tree](https://leetcode.com/problems/search-in-a-binary-search-tree)
+  * [1214. Two Sum BSTs](https://leetcode.com/problems/two-sum-bsts)
 * Serialize and Deserialize
   * [449. Serialize and Deserialize BST](https://leetcode.com/problems/serialize-and-deserialize-bst)
