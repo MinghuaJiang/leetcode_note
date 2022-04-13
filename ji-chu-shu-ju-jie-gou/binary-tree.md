@@ -260,4 +260,6 @@
     * [297. Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree)
     * [536. Construct Binary Tree from String](https://leetcode.com/problems/construct-binary-tree-from-string)
   * Iterator
-    *
+    * [173. Binary Search Tree Iterator](https://leetcode.com/problems/binary-search-tree-iterator)
+    * [341. Flatten Nested List Iterator](https://leetcode.com/problems/flatten-nested-list-iterator)
+    * [1586. Binary Search Tree Iterator II](https://leetcode.com/problems/binary-search-tree-iterator-ii)
