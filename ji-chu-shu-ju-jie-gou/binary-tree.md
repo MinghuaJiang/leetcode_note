@@ -211,6 +211,8 @@
   * Recursion
     * 考点一般主要看每次递归需要返回什么内容，可能需要同时返回多个信息，然避免重复计算。
   * Serialize and Deserialize
+  * Iterator
+    * 考察Traverse的iterative写法
 * Leetcode 考题
   * Recursion (基于三种order之一）
     * [100. Same Tree](https://leetcode.com/problems/same-tree)
@@ -257,3 +259,5 @@
   * Serialize and Deserialize
     * [297. Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree)
     * [536. Construct Binary Tree from String](https://leetcode.com/problems/construct-binary-tree-from-string)
+  * Iterator
+    *
