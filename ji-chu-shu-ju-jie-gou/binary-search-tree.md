@@ -9,8 +9,6 @@
 ### Leetcode题目
 
 * Binary Search Tree特性基础
-  * [95. Unique Binary Search Trees II](https://leetcode.com/problems/unique-binary-search-trees-ii)
-  * [96. Unique Binary Search Trees](https://leetcode.com/problems/unique-binary-search-trees)
   * [98. Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree)
   * [99. Recover Binary Search Tree](https://leetcode.com/problems/recover-binary-search-tree)
   * [173. Binary Search Tree Iterator](https://leetcode.com/problems/binary-search-tree-iterator)
