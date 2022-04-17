@@ -5,6 +5,85 @@
 * 任何子树左节点小于parent，右节点大于parent。
 * 平衡的BST，可以用来做binary search或quickselect。
 * 找median的题，要么minmax heap，要么binary search, 要么bst
+* BST的插入
+
+```java
+public TreeNode insertNode(TreeNode root, int val){
+    if (root == null){
+        return new TreeNode(val);
+    }
+
+    if (val > root.val){
+        root.right = insertNode(root.right, val);
+    }else{
+        root.left = insertNode(root.left, val);
+    }
+
+    return root;
+}
+
+public TreeNode insertNodeV2(TreeNode root, int val){
+    TreeNode curr = root;
+    TreeNode prev = null;
+    while (curr != null){
+        prev = curr;
+        if (val > curr.val){
+            curr = curr.right;
+            if (curr == null){
+                prev.right = new TreeNode(val);
+            }
+        }else{
+            curr = curr.left;
+            if (curr == null){
+                prev.left = new TreeNode(val);
+            }
+        }
+    }
+
+    return root;
+}
+```
+
+* BST的删除
+  * 先找到要删除的点
+  * 然后分三种情况
+    * 没有左右children，直接删掉就好
+    * 有一个child, 把child node赋值给要被删的Node就好了
+    * 左右children都在，那么可以和successor或者predessor做交换，然后递归删除那个successor或predessor
+
+```java
+public TreeNode deleteNode(TreeNode root, int key) {
+        if (root == null){
+            return null;
+        }
+
+        if (key > root.val){
+            root.right = this.deleteNode(root.right, key);
+        }else if (key < root.val){
+            root.left = this.deleteNode(root.left, key);
+        }else{
+            if (root.left == null && root.right == null){
+                root = null;
+            }else if (root.left != null && root.right != null){
+                TreeNode curr = root.right;
+                while (curr.left != null){
+                    curr = curr.left;
+                }
+
+                root.val = curr.val;
+                root.right = this.deleteNode(root.right, root.val);
+            }else{
+                if (root.left != null){
+                    root = root.left;
+                }else if (root.right != null){
+                    root = root.right;
+                }
+            }
+        }
+
+        return root;
+    }
+```
 
 ### Leetcode题目
 
