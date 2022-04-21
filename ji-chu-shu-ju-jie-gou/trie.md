@@ -76,4 +76,5 @@ public class Trie {
 * [588. Design In-Memory File System](https://leetcode.com/problems/design-in-memory-file-system)
 * [1166. Design File System](https://leetcode.com/problems/design-file-system)
 * [1268. Search Suggestions System](https://leetcode.com/problems/search-suggestions-system)
+* [1804. Implement Trie II (Prefix Tree)](https://leetcode.com/problems/implement-trie-ii-prefix-tree)
 * [1948. Delete Duplicate Folders in System](https://leetcode.com/problems/delete-duplicate-folders-in-system)
