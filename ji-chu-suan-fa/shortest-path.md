@@ -2,6 +2,9 @@
 
 ### 基本思路
 
+* 单源
+*
+
 ### 常见Leetcode考题
 
 * [317. Shortest Distance from All Buildings](https://leetcode.com/problems/shortest-distance-from-all-buildings)
