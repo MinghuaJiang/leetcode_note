@@ -382,6 +382,52 @@ private void swap(int[] array, int i, int j){
 }
 ```
 
+```java
+    public int findKthLargest(int[] nums, int k) {
+        return this.findKthSmallest(nums, nums.length + 1 - k);
+    }
+    
+    private int findKthSmallest(int[] nums, int k){
+        int startIndex = 0;
+        int endIndex = nums.length - 1;
+
+        int pivotIndex = this.partition(nums, startIndex, endIndex);
+    
+        while (pivotIndex != k - 1){
+            if (pivotIndex > k - 1){
+                endIndex = pivotIndex - 1;
+            }else{
+                startIndex = pivotIndex + 1;
+            } 
+        
+            pivotIndex = this.partition(nums, startIndex, endIndex);
+        }
+
+        return nums[pivotIndex];
+    }
+
+    private int partition(int[] array, int startIndex, int endIndex){
+        int pivot = array[startIndex];
+        int currentIndex = startIndex;
+        for (int i = startIndex + 1; i <= endIndex; i++){
+            if (array[i] <= pivot){
+                currentIndex++;
+                swap(array, currentIndex, i);
+            }
+        }
+
+        swap(array, startIndex, currentIndex);
+        return currentIndex;
+    }
+
+
+    private void swap(int[] array, int i, int j){
+        int tmp = array[i];
+        array[i] = array[j];
+        array[j] = tmp;
+    }
+```
+
 ### Merge Sort
 
 * 也是一种基于divide and conquer的排序算法，区别在于quick sort类似于pre-order traverse的递归。而merge sort类似于post-order traverse的递归
@@ -702,6 +748,7 @@ Non-comparison based sorting相关Leetcode题目
 ### QuickSelect相关Leetcode题目
 
 * [215. Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array)
+* [973. K Closest Points to Origin](https://leetcode.com/problems/k-closest-points-to-origin)
 
 ###
 
