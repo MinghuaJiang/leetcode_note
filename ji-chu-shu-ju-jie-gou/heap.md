@@ -119,6 +119,7 @@ public class Heap {
       ```
   * median相关问题
     * 需要同时用到min-max heap，然后维持数量相同的大小heap，这样要么多一个元素的堆的顶是中位数，要么两个堆顶的元素相加除以2是中位数
+  * Task Scheduling
 * Heap相关的Leetcode
   * median相关问题
     * [295. Find Median from Data Stream](https://leetcode.com/problems/find-median-from-data-stream)
@@ -132,3 +133,9 @@ public class Heap {
     * [658. Find K Closest Elements](https://leetcode.com/problems/find-k-closest-elements)
     * [719. Find K-th Smallest Pair Distance](https://leetcode.com/problems/find-k-th-smallest-pair-distance)
     * [973. K Closest Points to Origin](https://leetcode.com/problems/k-closest-points-to-origin)
+  * Task Scheduling
+    * [743. Network Delay Time](https://leetcode.com/problems/network-delay-time)
+    * [759. Employee Free Time](https://leetcode.com/problems/employee-free-time)
+    * [882. Process Tasks Using Servers](https://leetcode.com/problems/process-tasks-using-servers)
+    * [1834. Single-Threaded CPU](https://leetcode.com/problems/single-threaded-cpu)
+    *
