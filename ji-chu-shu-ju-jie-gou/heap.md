@@ -134,8 +134,8 @@ public class Heap {
     * [719. Find K-th Smallest Pair Distance](https://leetcode.com/problems/find-k-th-smallest-pair-distance)
     * [973. K Closest Points to Origin](https://leetcode.com/problems/k-closest-points-to-origin)
   * Task Scheduling
+    * [621. Task Scheduler](https://leetcode.com/problems/task-scheduler)
     * [743. Network Delay Time](https://leetcode.com/problems/network-delay-time)
     * [759. Employee Free Time](https://leetcode.com/problems/employee-free-time)
     * [882. Process Tasks Using Servers](https://leetcode.com/problems/process-tasks-using-servers)
     * [1834. Single-Threaded CPU](https://leetcode.com/problems/single-threaded-cpu)
-    *
