@@ -8,5 +8,6 @@
 
 * [218. The Skyline Problem](https://leetcode.com/problems/the-skyline-problem)
 * [253. Meeting Rooms II](https://leetcode.com/problems/meeting-rooms-ii)
+* [759. Employee Free Time](https://leetcode.com/problems/employee-free-time)
 * [850. Rectangle Area II](https://leetcode.com/problems/rectangle-area-ii)
 * [1094. Car Pooling](https://leetcode.com/problems/car-pooling)
